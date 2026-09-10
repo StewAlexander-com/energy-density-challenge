@@ -44,3 +44,11 @@ This repository is static research documentation. It is not permission to spend 
 Use `CONTRIBUTING.md`. Drafts are reviewed before merging. Canonical hypothesis, experiment and result identifiers are EDC-H-####, EDC-E-#### and EDC-R-####. Maintainers allocate IDs. Never reuse or delete an ID. The `falsified` and `unresolved` directories index permanent records; they do not move their canonical files. Validate against `schemas/` and run the semantic checks.
 
 Available project evidence: no completed study or experimental result. Two reviewed background sources support definitions only. The first systems model was newly proposed after the original was not supplied.
+
+## State 0002 extension: evaluate the process separately
+
+The original instructions above are preserved in ASTRA-STATE-0001 at commit `3b55fbab2ea9b94e0f78e9d458d5f6144cbed026`. This explicitly dated extension (September 10, 2026) adds a second program; it does not reclassify the original energy records.
+
+Read `docs/state-0002-review.md`, `docs/allocation-protocol.md`, `docs/allocation-pilot.md` and `research/process/index.json`. Ask whether the structured process improves consequential decisions against credible alternatives within stated resource limits. Do not assume novelty, independent AI perspectives or superiority. A useful energy idea is not a process-evaluation result.
+
+The next proposal is to design a small feasibility screen for human review. Case selection, scoring, assessors and budgets remain unspecified; the evaluation is not registered or run. Waiting, stopping and retaining disagreement are valid decisions. Consult `research/process/sources.json` for abstract-level evidence limits. `research/states/index.json` links preserved archives; hashes establish integrity relative to a trusted reference, not truth or external immutability.

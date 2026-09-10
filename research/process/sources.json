@@ -1,0 +1,59 @@
+{
+  "review_scope": "Focused prior-art scan, not a systematic review. Abstract-level limits are retained.",
+  "sources": [
+    {
+      "id": "EDC-S-0005",
+      "title": "Value of information and decision pathways: Concepts and case studies",
+      "url": "https://www.nist.gov/publications/value-information-and-decision-pathways-concepts-and-case-studies",
+      "accessed": "2026-09-10",
+      "verification": "abstract_reviewed",
+      "supports": "Information acquisition has costs; value depends on use in decisions.",
+      "does_not_support": "No estimate of the value of this protocol or any proposed energy experiment."
+    },
+    {
+      "id": "EDC-S-0006",
+      "title": "NIST: What is experimental design?",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section1/pri11.htm",
+      "accessed": "2026-09-10",
+      "verification": "page_reviewed",
+      "supports": "Experimental design specifies planned changes and observed effects.",
+      "does_not_support": "No validation of this proposed pilot or sample size."
+    },
+    {
+      "id": "EDC-S-0007",
+      "title": "Center for Open Science: Preregistration",
+      "url": "https://www.cos.io/initiatives/prereg",
+      "accessed": "2026-09-10",
+      "verification": "page_reviewed",
+      "supports": "Prespecifying a plan distinguishes planned tests from exploration.",
+      "does_not_support": "Preregistration alone does not guarantee sound hypotheses or results."
+    },
+    {
+      "id": "EDC-S-0008",
+      "title": "When combinations of humans and AI are useful",
+      "url": "https://arxiv.org/abs/2405.06087",
+      "accessed": "2026-09-10",
+      "verification": "abstract_reviewed",
+      "supports": "The authors report heterogeneous effects and average losses against the better solo participant in the included studies.",
+      "does_not_support": "No direct test of our protocol or energy-domain performance. Full paper not evaluated; publisher page retrieval failed."
+    },
+    {
+      "id": "EDC-S-0009",
+      "title": "Should we be going MAD? A Look at Multi-Agent Debate Strategies for LLMs",
+      "url": "https://arxiv.org/abs/2311.17371",
+      "accessed": "2026-09-10",
+      "verification": "abstract_reviewed",
+      "supports": "The authors report evaluated debate methods did not reliably outperform other prompting strategies, with sensitivity to tuning.",
+      "does_not_support": "No universal rejection of debate or proof of performance in this project; full paper not evaluated."
+    },
+    {
+      "id": "EDC-S-0010",
+      "title": "W3C PROV Overview",
+      "url": "https://www.w3.org/TR/prov-overview/",
+      "accessed": "2026-09-10",
+      "verification": "page_reviewed",
+      "supports": "Existing standards describe provenance entities, activities and agents.",
+      "does_not_support": "Our lightweight graph is not claimed to implement or conform to PROV; provenance does not establish truth."
+    }
+  ]
+}

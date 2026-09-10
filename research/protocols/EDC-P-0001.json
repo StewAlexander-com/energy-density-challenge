@@ -1,0 +1,30 @@
+{
+  "$schema": "../../schemas/process.schema.json",
+  "schema_version": "1.0.0",
+  "state_id": "ASTRA-STATE-0002",
+  "research_program": "process_evaluation",
+  "status": "proposed",
+  "result_ids": [],
+  "id": "EDC-P-0001",
+  "kind": "allocation_protocol",
+  "title": "Choose the next research action under explicit resource limits",
+  "claim": "Within a registered energy decision setting, the structured protocol improves consequential research choices under comparable resource caps against credible alternatives.",
+  "claim_status": "unresolved",
+  "novelty_status": "synthesis_not_demonstrated_novel",
+  "evaluation_id": "EDC-V-0001",
+  "methods": [
+    "Define a useful service, decision, beneficiary and boundary.",
+    "Keep competing predictions and initial judgments before sharing where feasible.",
+    "Compare decision value, reliability and separate resource constraints; unknown is not zero.",
+    "Check feasibility, safety, authority and cost before prerecording and acting.",
+    "Assess evidence, preserve dissent, record actual costs and choose again, wait or stop."
+  ],
+  "stop_trigger": "After two reasoning rounds without a decision-relevant change, pause for a recorded continuation justification. This provisional trigger is unvalidated.",
+  "limits": [
+    "No universal information-per-cost score.",
+    "Agreement, confidence, hashes and citations do not establish truth.",
+    "No result in the energy program proves this process is superior.",
+    "No autonomous execution, recruitment or spending."
+  ],
+  "document": "docs/allocation-protocol.md"
+}

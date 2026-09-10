@@ -9,6 +9,7 @@ NAME = 'Energy Density Challenge'
 IMAGE = 'assets/social-preview.jpg'
 IMAGE_ALT = 'Energy Density Challenge. Is energy density the right problem? Open research. Start with the question.'
 PAGES = {
+    'next.html': ('What should we learn next?', 'Review a proposed protocol for choosing energy research actions, inspect ten cumulative critiques, and compare preserved research states without assuming the process works.'),
     'license.html': ('MIT license', 'Read the Energy Density Challenge MIT license: permission to use, modify and share original project materials, with copyright and permission notices preserved.'),
     'index.html': ('Is energy density the right problem?', 'An open research challenge: test whether energy density is the right problem. Compare alternatives, inspect assumptions and contribute a better question.'),
     'explore.html': ('Explore the assumptions', 'Explore a proposed energy systems model, compare efficiency and demand, and inspect the unresolved hypothesis and proposed first study.'),

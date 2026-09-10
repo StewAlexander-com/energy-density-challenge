@@ -267,3 +267,16 @@ code { overflow-wrap: anywhere; }
 @media print { .share-panel { display: none; } }
 
 .license-copy { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; background: transparent; padding: 0; border: 0; }
+
+/* State 0002 uses the existing reading scale and native disclosures. */
+.allocation-fields { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px 28px; margin-bottom: 24px; }
+.allocation-fields .field { margin: 0; }
+.allocation-fields select { width: 100%; min-width: 0; min-height: 48px; }
+.allocation-result { padding: 24px; margin-top: 24px; border-left: 3px solid var(--accent); background: var(--soft); }
+.state-lineage { padding-left: 24px; }
+.state-lineage li { padding: 8px 0 18px 8px; }
+.state-lineage p { margin: 6px 0; }
+.state-digest { display: inline-block; overflow-wrap: anywhere; font-size: 0.875rem; max-width: 100%; }
+.review-pass p:last-child { margin-bottom: 20px; }
+.extension-note h2 { font-size: 1.75rem; }
+@media (max-width: 720px) { .allocation-fields { grid-template-columns: 1fr; } }

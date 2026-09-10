@@ -1,0 +1,115 @@
+{
+  "semantics": "Edges point from a record to its prerequisite; this is a provenance/dependency DAG, not a causal energy model. No evidence or result nodes are invented.",
+  "nodes": [
+    {
+      "id": "process-question",
+      "type": "PROBLEM",
+      "label": "Can a structured process improve the next research decision?",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "bounded-service",
+      "type": "SERVICE",
+      "label": "Energy service and evaluation boundary remain to be chosen",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "resource-limits",
+      "type": "RESOURCE",
+      "label": "Time, attention, compute, cost and burden caps remain unset",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "process-helps",
+      "type": "HYPOTHESIS",
+      "label": "Structure adds decision value within resource limits",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "process-costs",
+      "type": "HYPOTHESIS",
+      "label": "Structure adds overhead or correlated error without useful benefit",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "different-outcomes",
+      "type": "PREDICTION",
+      "label": "The competing process claims imply different quality-cost outcomes",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "process-pilot",
+      "type": "EXPERIMENT",
+      "label": "A proposed screen and comparative pilot",
+      "record": "research/evaluations/EDC-V-0001.json",
+      "status": "proposed"
+    },
+    {
+      "id": "pause-rule",
+      "type": "STOP_CONDITION",
+      "label": "Pause when no decision-relevant change or no feasible authorized action",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "allocation-choice",
+      "type": "DECISION",
+      "label": "Prepare the screen; do not execute a trial",
+      "record": "research/decisions/EDC-D-0001.json",
+      "status": "proposed"
+    }
+  ],
+  "edges": [
+    {
+      "from": "process-helps",
+      "to": "process-question",
+      "relation": "depends_on"
+    },
+    {
+      "from": "process-costs",
+      "to": "process-question",
+      "relation": "depends_on"
+    },
+    {
+      "from": "different-outcomes",
+      "to": "process-helps",
+      "relation": "depends_on"
+    },
+    {
+      "from": "different-outcomes",
+      "to": "process-costs",
+      "relation": "depends_on"
+    },
+    {
+      "from": "process-pilot",
+      "to": "different-outcomes",
+      "relation": "depends_on"
+    },
+    {
+      "from": "process-pilot",
+      "to": "bounded-service",
+      "relation": "depends_on"
+    },
+    {
+      "from": "process-pilot",
+      "to": "resource-limits",
+      "relation": "depends_on"
+    },
+    {
+      "from": "allocation-choice",
+      "to": "process-pilot",
+      "relation": "depends_on"
+    },
+    {
+      "from": "allocation-choice",
+      "to": "pause-rule",
+      "relation": "depends_on"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schemas/process.schema.json",
+  "schema_version": "1.0.0",
+  "state_id": "ASTRA-STATE-0002",
+  "research_program": "process_evaluation",
+  "status": "proposed",
+  "result_ids": [],
+  "id": "EDC-V-0001",
+  "kind": "process_evaluation",
+  "title": "Feasibility screen before a comparative research-process pilot",
+  "protocol_id": "EDC-P-0001",
+  "stages": [
+    {
+      "name": "feasibility_screen",
+      "proposed_cases": 3,
+      "purpose": "Determine whether withheld-outcome energy decisions can be scored reliably without contamination."
+    },
+    {
+      "name": "comparative_pilot",
+      "proposed_cases": 12,
+      "proposed_services": 2,
+      "purpose": "Screen for a useful process advantage; not powered evidence of general calibration or universal superiority."
+    }
+  ],
+  "comparators": [
+    "Relevant expert alone",
+    "Competent single model selected on separate development cases",
+    "Structured human-AI group",
+    "Unstructured group with the same composition and tools as the structured group"
+  ],
+  "preregistration": {
+    "cases_and_licenses": null,
+    "information_cutoff": null,
+    "participant_and_assessor_plan": null,
+    "resource_caps": null,
+    "primary_decision_loss_rubric": null,
+    "minimum_useful_effect": null,
+    "harm_tolerance": null,
+    "sample_rationale": null,
+    "leakage_and_exclusion_rules": null,
+    "allocation_and_carryover_plan": null,
+    "analysis_plan": null,
+    "stopping_rule": null
+  },
+  "missing_reason": "These design choices require case curation and practitioner review before registration. No study has run.",
+  "decision_rules": [
+    "Invalid scoring or contaminated cases require revising the task, not declaring the protocol falsified.",
+    "A meaningful loss or failure to meet a prespecified useful-effect rule counts against this implementation within tested conditions.",
+    "An imprecise or nonsignificant result can remain unresolved.",
+    "A promising pilot earns prospective independent testing, not a general success claim."
+  ],
+  "document": "docs/allocation-pilot.md"
+}

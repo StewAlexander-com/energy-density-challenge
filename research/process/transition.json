@@ -1,0 +1,50 @@
+{
+  "from": "ASTRA-STATE-0001",
+  "to": "ASTRA-STATE-0002",
+  "date": "2026-09-10",
+  "provenance": "One cumulative AI-assisted review of a user-supplied follow-up; no independent panel or new empirical study.",
+  "changed": [
+    "Added a separate, falsifiable research-process program.",
+    "Added a proposed feasibility screen, resource-aware allocation record and explicit stop conditions.",
+    "Added state archives, SHA-256 file manifests, Merkle roots and parent-hash links. These did not exist as an application-level research DAG in State 0001."
+  ],
+  "why": [
+    "The follow-up exposed an implicit claim about the value of structured human-AI research.",
+    "That claim must compete against credible alternatives and justify overhead."
+  ],
+  "unchanged": [
+    "The original energy model, hypothesis, desk audit, source ledger, ten-step framing critique and challenge definition remain byte-for-byte unchanged.",
+    "Energy density is a candidate; network centrality, confidence, agreement and hashes do not prove truth.",
+    "Thermodynamic entropy remains distinct from displaced burdens.",
+    "No project result, independent replication or completed evaluation is claimed."
+  ],
+  "rejected": [
+    "Automatically adopting intelligence allocation as the right abstraction.",
+    "Claiming a novel protocol from recombining established methods.",
+    "Treating information-per-resource as a universal scalar objective.",
+    "Replacing or retroactively harmonizing State 0001.",
+    "Calling a conceptual review an experiment or ten independent reviews."
+  ],
+  "less_certain": [
+    "Whether structured interaction earns its overhead.",
+    "Whether decision quality can be scored reliably across energy services.",
+    "Whether retrospective cases can avoid model contamination."
+  ],
+  "more_certain": [
+    "The archived implementation lacks the application-level Merkle research DAG assumed by the directive.",
+    "Existing value-of-information, experimental-design and provenance methods overlap the proposal. These are documentary findings, not increased empirical confidence in the protocol."
+  ],
+  "new_questions": [
+    "Can two reviewers agree on a consequential case-specific rubric?",
+    "Which baseline and constraints are fair for the chosen service?",
+    "When does extra structure change a decision rather than just the explanation?"
+  ],
+  "next_observations": [
+    "Feasibility of blinded scoring and outcome withholding in three curated cases.",
+    "Actual resource needs and contamination risk before a comparative pilot."
+  ],
+  "confidence": {
+    "value": null,
+    "reason": "No calibrated estimate or completed protocol evaluation."
+  }
+}

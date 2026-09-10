@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schemas/process.schema.json",
+  "schema_version": "1.0.0",
+  "state_id": "ASTRA-STATE-0002",
+  "research_program": "process_evaluation",
+  "status": "proposed",
+  "result_ids": [],
+  "id": "EDC-D-0001",
+  "kind": "allocation_decision",
+  "title": "Prepare a small feasibility screen for review",
+  "protocol_id": "EDC-P-0001",
+  "evaluation_id": "EDC-V-0001",
+  "selected_action": "design_feasibility_screen",
+  "rationale": "An unusable scoring task or leaked outcomes can invalidate an expensive comparison. Resolve these design risks before commissioning research runs.",
+  "alternatives": [
+    {
+      "action": "more_multi_agent_deliberation",
+      "reason_not_selected": "No specified new observation or expected decision change justifies another round."
+    },
+    {
+      "action": "physical_energy_experiment",
+      "reason_not_selected": "The process comparison and energy use case are not registered; feasibility and authorization are missing."
+    },
+    {
+      "action": "full_comparative_trial",
+      "reason_not_selected": "Cases, scoring, reviewers and caps are not ready."
+    },
+    {
+      "action": "wait",
+      "reason_not_selected": "A bounded design document can be prepared now; execution waits for prerequisites."
+    }
+  ],
+  "resource_estimates": {
+    "human_attention": {
+      "value": null,
+      "unit": "person-hours",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "inference": {
+      "value": null,
+      "unit": "tokens",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "electricity": {
+      "value": null,
+      "unit": "kWh",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "spend": {
+      "value": null,
+      "unit": "USD",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "elapsed_time": {
+      "value": null,
+      "unit": "hours",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "laboratory_time": {
+      "value": null,
+      "unit": "hours",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "materials": {
+      "value": null,
+      "unit": "case-specific units",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "opportunity_cost": {
+      "value": null,
+      "unit": "unvalued displaced work",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "environmental_burden": {
+      "value": null,
+      "unit": "case-specific measures",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    }
+  },
+  "expected_decision_value": null,
+  "authority": "Design recommendation only. No participants, funds, laboratory work or model runs are committed.",
+  "revisit_trigger": "A curator and practitioners specify viable cases, outcome-based scoring, assessors and resource caps. Otherwise wait or reframe.",
+  "retrospective_assessment": null
+}

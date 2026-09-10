@@ -1,0 +1,16 @@
+{
+  "state_id": "ASTRA-STATE-0002",
+  "energy_program": "research/index.json",
+  "protocols": [
+    "research/protocols/EDC-P-0001.json"
+  ],
+  "evaluations": [
+    "research/evaluations/EDC-V-0001.json"
+  ],
+  "decisions": [
+    "research/decisions/EDC-D-0001.json"
+  ],
+  "sources": "research/process/sources.json",
+  "graph": "research/process/graph.json",
+  "results": []
+}

@@ -4,8 +4,11 @@
 
 The systems model is proposed and uncalibrated. The framing hypothesis is unresolved and the first desk audit is proposed. No completed project study, independent replication or validated leverage ranking is recorded. Read current canonical records before relying on this summary. Background definitions are not project results.
 
+State 0001 preserves the original implementation. State 0002 adds a separate, untested proposal for choosing research actions under resource limits. Its evaluation is not registered or run. No advantage for structured human-AI research is established.
+
 ## Start here
 
+- [What should we learn next?](https://stewalexander-com.github.io/energy-density-challenge/next.html): State 0002 review, planning checklist and preserved history.
 - [AI instructions](https://stewalexander-com.github.io/energy-density-challenge/AI_CHALLENGE.md): Reading order, evidence rules and first deliverable.
 - [Challenge record](https://stewalexander-com.github.io/energy-density-challenge/challenge.json): Mission, current phase and missing evidence.
 - [Framing review](https://stewalexander-com.github.io/energy-density-challenge/review.html): Ten cumulative passes, not independent peer review.
@@ -22,6 +25,14 @@ The systems model is proposed and uncalibrated. The framing hypothesis is unreso
 - [research/hypotheses/EDC-H-0001.json](https://stewalexander-com.github.io/energy-density-challenge/research/hypotheses/EDC-H-0001.json)
 - [research/experiments/EDC-E-0001.json](https://stewalexander-com.github.io/energy-density-challenge/research/experiments/EDC-E-0001.json)
 - [research/literature/sources.json](https://stewalexander-com.github.io/energy-density-challenge/research/literature/sources.json)
+- [research/process/index.json](https://stewalexander-com.github.io/energy-density-challenge/research/process/index.json)
+- [research/process/transition.json](https://stewalexander-com.github.io/energy-density-challenge/research/process/transition.json)
+- [research/process/sources.json](https://stewalexander-com.github.io/energy-density-challenge/research/process/sources.json)
+- [research/process/graph.json](https://stewalexander-com.github.io/energy-density-challenge/research/process/graph.json)
+- [research/protocols/EDC-P-0001.json](https://stewalexander-com.github.io/energy-density-challenge/research/protocols/EDC-P-0001.json)
+- [research/evaluations/EDC-V-0001.json](https://stewalexander-com.github.io/energy-density-challenge/research/evaluations/EDC-V-0001.json)
+- [research/decisions/EDC-D-0001.json](https://stewalexander-com.github.io/energy-density-challenge/research/decisions/EDC-D-0001.json)
+- [research/states/index.json](https://stewalexander-com.github.io/energy-density-challenge/research/states/index.json)
 
 ## Review and reuse
 

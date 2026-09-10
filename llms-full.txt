@@ -4,6 +4,8 @@
 
 The systems model is proposed and uncalibrated. The framing hypothesis is unresolved and the first desk audit is proposed. No completed project study, independent replication or validated leverage ranking is recorded. Read current canonical records before relying on this summary. Background definitions are not project results.
 
+State 0001 preserves the original implementation. State 0002 adds a separate, untested proposal for choosing research actions under resource limits. Its evaluation is not registered or run. No advantage for structured human-AI research is established.
+
 This reading pack is a convenience copy. Each section names its canonical source. Linked third-party sources are not reproduced or independently validated by this bundle.
 
 ---
@@ -29,6 +31,12 @@ For a specified useful service, what constraint matters most, and which interven
 Energy density is one candidate. It must be compared with efficiency, service redesign, infrastructure, operations and the best feasible existing option. A result can retain, narrow, replace or leave the framing unresolved.
 
 [Twenty-step UX review](https://stewalexander-com.github.io/energy-density-challenge/docs/ux-review.md) documents the readability and interface revision.
+
+## What should we learn next?
+
+[State 0002: choosing the next research action](https://stewalexander-com.github.io/energy-density-challenge/next.html) adds a separate, untested process hypothesis and a proposed cheap evaluation. Read the [ten cumulative review passes](https://stewalexander-com.github.io/energy-density-challenge/docs/state-0002-review.md), [protocol](https://stewalexander-com.github.io/energy-density-challenge/docs/allocation-protocol.md) and [state transition](https://stewalexander-com.github.io/energy-density-challenge/research/process/transition.json). No process evaluation has been registered or run.
+
+The original implementation is preserved as [ASTRA-STATE-0001](https://github.com/StewAlexander-com/energy-density-challenge/tree/3b55fbab2ea9b94e0f78e9d458d5f6144cbed026). [State manifests](https://stewalexander-com.github.io/energy-density-challenge/research/states/index.json) record file digests, Merkle roots and parent hashes; integrity does not establish scientific truth. See [verification instructions](https://stewalexander-com.github.io/energy-density-challenge/docs/research-states.md).
 
 ## What exists
 
@@ -138,6 +146,14 @@ This repository is static research documentation. It is not permission to spend 
 Use `CONTRIBUTING.md`. Drafts are reviewed before merging. Canonical hypothesis, experiment and result identifiers are EDC-H-####, EDC-E-#### and EDC-R-####. Maintainers allocate IDs. Never reuse or delete an ID. The `falsified` and `unresolved` directories index permanent records; they do not move their canonical files. Validate against `schemas/` and run the semantic checks.
 
 Available project evidence: no completed study or experimental result. Two reviewed background sources support definitions only. The first systems model was newly proposed after the original was not supplied.
+
+## State 0002 extension: evaluate the process separately
+
+The original instructions above are preserved in ASTRA-STATE-0001 at commit `3b55fbab2ea9b94e0f78e9d458d5f6144cbed026`. This explicitly dated extension (September 10, 2026) adds a second program; it does not reclassify the original energy records.
+
+Read `docs/state-0002-review.md`, `docs/allocation-protocol.md`, `docs/allocation-pilot.md` and `research/process/index.json`. Ask whether the structured process improves consequential decisions against credible alternatives within stated resource limits. Do not assume novelty, independent AI perspectives or superiority. A useful energy idea is not a process-evaluation result.
+
+The next proposal is to design a small feasibility screen for human review. Case selection, scoring, assessors and budgets remain unspecified; the evaluation is not registered or run. Waiting, stopping and retaining disagreement are valid decisions. Consult `research/process/sources.json` for abstract-level evidence limits. `research/states/index.json` links preserved archives; hashes establish integrity relative to a trusted reference, not truth or external immutability.
 
 
 ---
@@ -1215,6 +1231,749 @@ Source: https://stewalexander-com.github.io/energy-density-challenge/research/li
       "verification": "lead_only_direct_fetch_403",
       "supports": null,
       "does_not_support": "No project claim relies on this unverified full text."
+    }
+  ]
+}
+```
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/docs/state-0002-review.md
+
+# Ten cumulative reviews: what should we learn next?
+
+September 10, 2026. One AI-assisted review developed in ten successive passes. These passes are not ten independent reviewers, a completed experiment or a systematic literature review. Each pass carries a correction into the next. The attached directive is preserved verbatim in [the source directive](https://stewalexander-com.github.io/energy-density-challenge/docs/state-0002-directive.txt).
+
+## 01 — Preserve the actual starting point
+
+**Question:** What are we being asked to preserve, and does it exist?
+
+**Finding:** State 0001 questioned energy density as the objective and proposed service-specific comparison. Its model, hypothesis and first desk audit remain untested. The directive assumes an existing Merkle-backed research DAG; the implementation has Git history and linked JSON records, not that application-level graph. It also calls the first state independent, but independent review was never established.
+
+**Revision carried forward:** Preserve the complete tracked repository at commit `3b55fbab2ea9b94e0f78e9d458d5f6144cbed026` as ASTRA-STATE-0001. Add explicit SHA-256 manifests and parent links now, with their creation provenance. Hashes detect changes relative to a trusted reference; they do not prove correctness, completeness, independence or permanent availability. No missing reasoning is reconstructed as historical fact.
+
+## 02 — Separate two claims that could fail differently
+
+**Learning from 01:** Preserving the baseline does not validate its method.
+
+**Challenge:** “Directing intelligence at energy problems” could describe almost any research institution. It does not yet identify a measurable treatment. “Intelligence” also invites a vague latent score.
+
+**Revision carried forward:** Use a narrower working object: a protocol for choosing the next research action under stated resource limits. Program A tests interventions for a defined energy service. Program B tests whether this decision protocol improves choices against credible alternatives. Neither has produced a completed project study. An interesting idea in A is not evidence of an advantage in B.
+
+## 03 — Check the claimed novelty before inventing terminology
+
+**Learning from 02:** A measurable process must specify what differs from established practice.
+
+**Prior art:** [NIST's value-of-information overview](https://www.nist.gov/publications/value-information-and-decision-pathways-concepts-and-case-studies) connects information costs to decision benefits. [NIST's experimental-design introduction](https://www.itl.nist.gov/div898/handbook/pri/section1/pri11.htm) describes planning controlled changes and observing responses. [COS preregistration guidance](https://www.cos.io/initiatives/prereg) separates planned tests from exploratory work. [W3C PROV](https://www.w3.org/TR/prov-overview/) provides an existing provenance vocabulary.
+
+**Revision carried forward:** Classify decision analysis, experimental design, preregistration and provenance as established methods. Our synthesis combines bounded action comparison, retained dissent and auditable allocation records. A reusable, experimentally demonstrated improvement across energy cases could be a contribution; it has not been demonstrated or shown novel. A general scientific intelligence system remains speculation. Operations research, active learning, metascience, forecasting, robust optimization and automated laboratories are relevant adjacent fields still needing a deeper review.
+
+## 04 — Optimize decisions, not a convenient information score
+
+**Learning from 03:** Existing value-of-information methods offer a stronger starting point than a new universal “intelligence efficiency” ratio.
+
+**Challenge:** Information gain may resolve an irrelevant parameter. A ratio can favor tiny cheap tasks while missing a decisive costly test. Dollars cannot silently substitute for scarce expert attention, delay, electricity, risk or environmental burden. A predicted information gain is itself uncertain and model-dependent.
+
+**Revision carried forward:** First name the decision, beneficiary, feasible choices, time horizon and consequences of error. Then compare how an observation might change the decision, its reliability, cost ranges, opportunity cost and hard constraints. Retain separate resource measures and sensitivity to boundaries. Use expected net decision value only when probabilities and utilities are defensible; otherwise show conditional scenarios and non-dominated options. “Unknown” is not zero. A cheaper physical test wins only if it is feasible, safe and more useful for this decision; the directive's dollar examples are illustrations, not estimates.
+
+## 05 — Give the process a chance to lose
+
+**Learning from 04:** A process that consumes more resources must earn that expense through decision improvements.
+
+**Prior evidence:** The [Vaccaro, Almaatouq and Malone abstract](https://arxiv.org/abs/2405.06087) reports heterogeneous human–AI effects, including average losses against the better solo participant in the included studies. The [Smit et al. abstract](https://arxiv.org/abs/2311.17371) reports that evaluated debate methods did not reliably beat other prompting strategies, with results sensitive to tuning. These findings motivate strong controls; neither study tests this protocol or establishes its energy-domain performance. The abstracts were read; the full papers were not evaluated in this pass.
+
+**Revision carried forward:** Compare a frozen structured process against an expert, a competent single-model baseline and an unstructured group using the same participant pool as the structured group. Later add conventional teams, literature review and relevant optimization or laboratory workflows where the use case warrants them. Fix selection rules before evaluation; choosing the “best baseline” after seeing test outcomes introduces bias. The protocol earns no credit merely for beating an intentionally weak comparator.
+
+## 06 — Protect independence and expose manipulation
+
+**Learning from 05:** More participants and more confident prose may increase cost without adding independent signal.
+
+**Challenge:** Premature sharing, common source packets, memorized cases, an AI judging its own answers, selective case choice and founder-controlled success criteria can all produce apparent agreement. Humans can omit costly harms; agents can inflate novelty, split one claim into many or repeatedly sample until a score improves.
+
+**Revision carried forward:** Record first responses before sharing; disclose exposure, source overlap, model versions and roles. Different model names alone do not establish independence. Preserve incompatible predictions in separate branches. Use withheld outcomes, independent scoring where feasible, a fixed case list, locked rubrics and full failed-run accounting. Log deviations and conflicts. Seek counterexamples and anomalies, including boundary changes and stakeholder objections. Unknown unknowns cannot be listed in advance; these procedures may expose them but cannot guarantee coverage.
+
+## 07 — Repair the loop and make stopping operational
+
+**Learning from 06:** A well-documented discussion can still become an expensive echo chamber.
+
+**Challenge:** The proposed loop allocates resources after testing, although allocation is needed before every action. It omits an explicit resource and permission gate. Repeating all eight stages for each trivial choice can become overhead.
+
+**Revision carried forward:** Define the decision and limits → propose competing explanations and actions → choose a discriminating next step → check feasibility, permission and cost → prerecord the plan → act only when authorized → assess the observation → update or preserve branches → choose again, wait or stop. These are checks, not a mandatory meeting cycle. After two review rounds with no decision-relevant change, pause and justify the value of another round; this provisional trigger is itself subject to evaluation. Safety, missing authority or an exhausted cap blocks execution. Waiting names a revisit trigger and owner. An infeasible experiment is not the next action merely because it would be informative.
+
+## 08 — Design the least expensive useful evaluation
+
+**Learning from 07:** Before running a comparative trial, discover whether the decision task can even be scored without rewarding style.
+
+**Proposal:** Start with a three-case feasibility screen using existing, licensed evidence and outcomes withheld by a curator. Check whether two reviewers can apply an outcome-anchored decision rubric and whether cases leak their answers. This is a proposed design, not a performed study or proof that three is statistically sufficient.
+
+**Next if feasible:** A proposed twelve-case pilot across two energy services, with four prespecified processes from pass 05. Use the same information cutoff, permitted evidence access and comparable caps; log actual human time, inference, spend and elapsed time separately. Do not equalize human and machine work by inventing a conversion factor. Blind scorers to process labels and control carryover. Preregister cases, budget, sample rationale, primary decision-loss measure, tolerances, stopping rule and analysis before trial outputs. These details remain unfilled. More cases and prospective validation would be needed to estimate calibration or generalize.
+
+**Revision carried forward:** The immediate recommendation is to design and review the feasibility screen. No participant recruitment, spending, research run or physical experiment is authorized by this page. [The pilot specification](https://stewalexander-com.github.io/energy-density-challenge/docs/allocation-pilot.md) explains what would count against the protocol and what must be registered first.
+
+## 09 — Preserve history without building a shrine to hashes
+
+**Learning from 08:** Evaluation needs auditable choices and outcomes, not an impressive diagram.
+
+**Challenge:** Making every noun a node would create an elaborate ontology before the smallest trial. Rewriting old records to fit it would destroy precisely the history we want to study. A causal feedback loop is not a provenance DAG.
+
+**Revision carried forward:** Add a minimal process graph containing the two competing process hypotheses, a proposed evaluation, an allocation decision, a resource boundary and a stop condition. Its edges describe dependencies, not measured causes. Keep the existing energy model and all original scientific records byte-for-byte intact. Create State 0002 as a child of State 0001 using parent manifest hashes. Store exact source bundles, file digests and deterministic Merkle roots, plus a human change record. Repository policy rejects edits to published states; a trusted prior copy or commit is still needed to detect coordinated rewriting of the archive and its reference hashes.
+
+## 10 — Make the addition understandable and hard to misuse
+
+**Learning from 09:** The smallest useful interface explains a decision before showing its archival machinery.
+
+**Decision:** Retain the homepage's service-first question, examples, model explorer, calculator and contribution draft. Add one short entry to “What should we learn next?” The new page separates energy outcomes from process performance, exposes a bounded next-step checklist, and labels every recommendation as a planning aid. It does not rank research actions automatically, run agents, spend money or certify readiness.
+
+**Guardrails:** Blank answers cannot produce a recommendation. Unknown feasibility or resources cannot yield a test recommendation. A stalled discussion can lead to waiting or reframing. Edits invalidate the previous suggestion. Technical history, the ten passes and source limits stay in expandable sections or linked documents. Keep normal spacing, readable type, keyboard controls and existing sharing, AI files and MIT notices.
+
+**State 0002 verdict:** Proceed only with designing a cheap test of this narrower protocol. Reject claims that the abstraction is established, the synthesis is novel, multiple intelligences must win or a hash proves truth. The new abstraction is more testable; its practical benefit remains uncertain. This is a conceptual design decision, not an experimental finding.
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/docs/allocation-protocol.md
+
+# A proposed protocol for choosing the next research action
+
+Status: proposed and untested. Working record: [EDC-P-0001](https://stewalexander-com.github.io/energy-density-challenge/research/protocols/EDC-P-0001.json). This is our synthesis of established methods, not a claim of novelty or a running autonomous system.
+
+## Two questions, two evidence requirements
+
+**Energy research:** For a specified useful service, which intervention improves the outcome within the stated boundary? Energy density competes with efficiency, infrastructure, operations, service redesign and other feasible options. Success requires service-specific observations and comparison. A higher density number alone is insufficient.
+
+**Research-process evaluation:** Does this protocol help choose better next research actions than credible alternatives within comparable resource limits? Better means lower decision loss or a prespecified practical improvement without unacceptable cost, delay or harm. An idea produced by the process does not prove an advantage over a baseline.
+
+The original energy hypothesis, model and desk audit remain unchanged and untested. No process trial has been registered or run. The addition is ASTRA-STATE-0002, a conceptual child of the preserved ASTRA-STATE-0001.
+
+## A decision record before another round
+
+Name the useful service, beneficiary, decision owner, place, time and system boundary. State the decision that new information could change. Include feasible options, current evidence, assumptions, missing information, conflicting predictions and consequences of a wrong choice.
+
+Record candidate next actions, not just candidate technologies: consult a practitioner, search prior art, compute, simulate, measure, prototype, test, replicate, challenge the boundary, preserve disagreement, wait or stop. An action should explain what could be observed and how different outcomes would affect the decision. “Think harder” needs the same justification.
+
+For each candidate, record human time, compute or inference, electricity, spend, laboratory and equipment needs, materials, elapsed time, opportunity cost and relevant environmental burden. Use ranges and units where known; otherwise state what is missing. Budget caps and safety constraints are gates, not penalties that a high score can outweigh. Do not infer electricity use from token count without a defensible model.
+
+## Compare value without pretending to know it
+
+An uncertainty can be large but irrelevant to the present decision. Conversely, a small uncertainty near a decision threshold may matter greatly. Ask what changes the choice, whether the action can discriminate reliably, and what it displaces.
+
+If credible probabilities, utilities and costs exist, compare expected decision benefit net of acquisition costs, including sensitivity to priors and boundaries. Otherwise compare explicit scenarios and trade-offs. Do not add incomparable resource units or divide an invented benefit score by cost. Keep non-dominated alternatives when no justified ordering exists. Do not call all costs entropy: thermodynamic entropy, exergy loss and social or environmental burdens require distinct accounting.
+
+Across energy cases, retain service-specific outcomes and constraints. Register the case sampling frame and comparison rules before counting how often density helps. A Pareto improvement means improving at least one chosen outcome without worsening another within the chosen tolerances; it is not proof of universal leverage. Domain-specific constraint patterns remain a hypothesis, not a map of measured winners.
+
+## A short loop with explicit exits
+
+1. Define the decision and hard limits with someone who understands the service.
+2. Record competing explanations, predictions, boundaries and candidate actions. Keep initial contributions separate where feasible and disclose prior exposure.
+3. Identify the observation most likely to change an important choice. Compare feasible ways to obtain it with waiting or stopping.
+4. Check authority, safety, resources and feasibility before committing. Prerecord the plan and evaluation rule before seeing outcomes.
+5. Perform only the approved action. Log deviations, actual costs, anomalies and null or failed outcomes.
+6. Update claims within their tested scope. Preserve branches and their prior states. Choose another action, wait with an owner and revisit trigger, or stop.
+
+These checks may be short. They do not require a new committee or multiple agents for every choice. A decision about allocation is revisited after an observation; uncertainty about the allocation process does not make every step a new infinite metareview.
+
+## Stop and wait are useful outputs
+
+Pause after two successive reasoning rounds that change none of the relevant predictions, decision options, uncertainty assessment, boundaries or proposed tests. Two rounds is a provisional review trigger, not an empirically optimal constant. Continue only with a recorded reason that another round can add decision value within the remaining cap.
+
+Stop or defer when the cap is exhausted, the action is not authorized, no feasible observation can change the present choice, or continuing would displace a clearly more valuable commitment. State what new evidence, capability, stakeholder decision or resource would justify returning. Preserve disagreement when the available evidence cannot distinguish branches.
+
+## Guard against attractive group error
+
+Keep the first responses and a record of later exposure. Record source overlap, shared model families when known, conflicts and selection decisions. Different names do not establish statistical independence. Shared evidence is not necessarily bad, but correlated error must not be counted as replication.
+
+Use outcome-anchored scoring, blind process labels where feasible and keep scorers separate from participants. Do not let the founder or a model approve its own preferred conclusion. Lock the case list, comparator configurations and analysis before outcomes. Report failed runs, dissent and null results. Time, tokens, citations, hypothesis counts, agreement and confidence are process observations, not success measures on their own.
+
+Invite affected stakeholders to challenge the service and burden boundary. Preserve anomalies with their measurement context rather than silently deleting them. Unknown unknowns cannot be enumerated, and diverse viewpoints cannot guarantee that they will be found.
+
+## What would count against the protocol?
+
+Within a registered domain and budget, the protocol would lose support if it worsened decisions, missed critical burdens, raised total resource use without useful benefit, or failed a prespecified minimum improvement against a credible baseline. A small underpowered pilot cannot establish equivalence or universal failure. Poor task scoring or leaked outcomes may invalidate the comparison rather than refute the process.
+
+See [the proposed evaluation](https://stewalexander-com.github.io/energy-density-challenge/docs/allocation-pilot.md) for staged tests and unresolved registration fields. No process result can promote the original physical energy hypothesis, and no energy result alone can promote this process claim.
+
+## Prior art and limits
+
+This design combines decision analysis, value of information, experimental design, preregistration and provenance. The [source ledger](https://stewalexander-com.github.io/energy-density-challenge/research/process/sources.json) states exactly what was read and what it does not establish. Adjacent fields and novelty need a more complete review. The [ten cumulative passes](https://stewalexander-com.github.io/energy-density-challenge/docs/state-0002-review.md) show why the proposal was narrowed.
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/docs/allocation-pilot.md
+
+# A cheap test before a larger research system
+
+Status: proposed; not registered, funded or run. Record: [EDC-V-0001](https://stewalexander-com.github.io/energy-density-challenge/research/evaluations/EDC-V-0001.json). The following counts describe a design candidate, not a power calculation or a completed study.
+
+## First check whether the task is measurable
+
+Propose three previously resolved energy decision cases with licensed evidence. A curator prepares an information cutoff, feasible actions and an outcome-based reference rubric before participants see the cases. Withhold subsequent observations. Two reviewers independently try to apply the rubric and record disagreements, leakage risk and time needed. A decision that experts cannot score reliably is not rescued by asking an AI to grade it.
+
+This screen asks whether a comparative study is feasible. It cannot demonstrate calibration, superiority or generality. Reject or revise cases with ambiguous ground truth, impossible resource estimates or likely outcome leakage. For public cases that a model may have memorized, record exposure and exclude contaminated cases under rules written in advance. If leakage cannot be controlled, switch to prospective outcomes rather than calling the replay independent.
+
+## A small comparative pilot, if the screen passes
+
+Candidate design: twelve cases spanning two clearly defined energy services. Lock the case selection, allocation of cases to conditions and analysis before producing trial outputs. The same underlying case should be comparable across processes; use independent participants or counterbalanced assignment to reduce carryover. The unit of analysis is the case, with repeats clustered appropriately, not every answer or agent as a new independent sample.
+
+Compare four processes:
+
+- A relevant expert working alone.
+- One competent model with a frozen prompt and tool setup, chosen on separate development cases.
+- A structured human–AI group using the proposed protocol.
+- An unstructured group with the same participant composition, information and tools as the structured group.
+
+The last comparison helps distinguish structure from simply having extra participants. The solo comparisons test whether the group earns its overhead. Additional conventional-team, literature-review, forecasting, optimization or laboratory baselines should be selected for a later domain-specific evaluation, not claimed tested here.
+
+## Fair budgets and independent evaluation
+
+Before the run, specify caps for elapsed time, spend, human attention and compute; use the same information cutoff and permitted access. Record actual resource use separately by unit. Different processes may use different fractions of a cap. Compare decision quality under matched constraints and inspect the quality–cost trade-offs; do not conceal overhead in free expert time. Include protocol setup, curation, review, failed attempts and opportunity costs, amortized only under an explicit scenario.
+
+Outcome assessors should be unaware of process labels and separate from participants. Hide decorative formatting so presentation is not rewarded. Record identities, conflicts, prior case exposure, model versions, prompts, sources and tool access. Keep initial judgments before cross-exposure. Withhold trial outcomes from both participants and whoever selects a model or tunes a prompt.
+
+## Measures that must be fixed before outcomes
+
+Primary candidate: case-specific decision loss relative to prespecified acceptable actions and later observations. “Loss” must correspond to consequences in that service, not a generic prose-quality score. If it cannot be justified, the case is not ready. Register the smallest worthwhile improvement and tolerated harm before comparison.
+
+Secondary diagnostics: identification of the discriminating observation, critical burden detection, elapsed time, actual resource use, inappropriate-action rate and whether a wait or stop decision was justified. Hypothesis counts, citation counts and falsification counts are not targets. Calibration needs enough independently resolved probabilistic predictions and a prechosen scoring method; a three-case screen or twelve-case pilot is not adequate grounds for a broad calibration claim. Exploratory metrics must be labeled and their multiplicity acknowledged.
+
+Report uncertainty, case-level outcomes, clustering, exclusions, deviations, null results and negative cases. Do not average incompatible service losses without justified normalization. A win in one domain cannot stand in for another. Do not tune the protocol on the same cases used to claim its advantage.
+
+## Gates and possible conclusions
+
+Registration remains blocked until the case list and rights, participant availability, budget caps, primary rubric, assessor arrangements, minimum effect, harm tolerance, sample rationale, leakage handling, allocation design and stopping rule are specified and reviewed. The page does not recruit participants or authorize spending.
+
+- **Revise the measurement task:** reviewers cannot apply a defensible rubric, or leakage invalidates the comparison.
+- **Narrow or reject this implementation:** within the tested conditions, a credible comparator achieves meaningfully better choices or comparable choices at lower relevant cost, under the registered rule.
+- **Leave unresolved:** uncertainty is too large to distinguish a useful gain from no useful gain. A nonsignificant result alone is not equivalence.
+- **Earn a larger test:** the prespecified benefit and harm criteria are met within resource caps. Seek prospective, independent replication before broader claims.
+
+The three-case screen is the cheapest proposed next evaluation because it can expose an unusable scoring task before buying multi-agent runs. Its actual cost is unknown until a curator, reviewers, cases and caps are available. The current allocation decision is to prepare this design for review, not to declare it ready or run it.
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/docs/research-states.md
+
+# Preserved research states
+
+ASTRA-STATE-0001 is the exact tracked repository at commit `3b55fbab2ea9b94e0f78e9d458d5f6144cbed026`. Its archive includes the original conclusions, criticisms, proposed records, source limits, review documents and implementation. Only recorded material can be preserved; this does not reconstruct unrecorded reasoning or certify independent review.
+
+ASTRA-STATE-0002 is a child containing the new directive, cumulative review, protocol, proposed evaluation, allocation decision, process graph, source ledger and transition record. It is a selected research bundle, not a claim to contain the entire publishing checkout. The publishing Git commit separately preserves the implementation. Follow [the state index](https://stewalexander-com.github.io/energy-density-challenge/research/states/index.json) to both manifests and archives.
+
+## How integrity is recorded
+
+Each state directory contains exactly `source.tar` and `manifest.json`. The manifest records the archive SHA-256, a sorted list of regular file paths, byte counts and SHA-256 digests, and a deterministic Merkle root. No symlinks or path traversal entries are allowed. Nothing is extracted during validation.
+
+The scheme identifier is `edc-path-content-v1`:
+
+1. Order paths by Python's Unicode string order. Paths are canonical relative POSIX paths, encoded in UTF-8.
+2. Hash each file's exact bytes with SHA-256.
+3. A leaf is SHA-256 of byte `0x00`, the path bytes, byte `0x00`, and the raw 32-byte file digest.
+4. A parent is SHA-256 of byte `0x01`, its left child digest and its right child digest. Duplicate the last digest at an odd level. A one-file tree uses its leaf. Empty archives are rejected.
+5. A child state records the SHA-256 of its parent's exact manifest bytes, including the final newline. The state index records each manifest's exact digest. These are linked research-state records; causal cycles in the energy model are separate.
+
+The new hashes and manifests were added during State 0002. The earlier repository used Git and linked JSON; it did not already implement this application-level state mechanism. W3C PROV is relevant prior art, but this small graph is not claimed to conform to its model.
+
+## Verify a checkout
+
+Run the checks from the repository root:
+
+```sh
+python3 scripts/research_states.py
+python3 scripts/research_states.py --base <trusted-earlier-commit>
+```
+
+The normal validation workflow checks archive bytes, members, roots, parent hashes, index coverage and original scientific files. With a trusted earlier commit, it also rejects edits or removal of any previously published state file. The seal operation refuses to overwrite an existing manifest or archive. Corrections belong in a new child state and an explicit transition; do not edit a published state to clean up its history.
+
+State 0001's original scientific files remain byte-for-byte intact in the live repository. State 0002's selected research files are checked against their snapshot. A later change should add a successor and update verification deliberately, retaining all earlier snapshots and explaining any supersession.
+
+## What these checks cannot prove
+
+A hash is not truth, an independent replication, a timestamp authority, a signature of a human author or a guarantee of permanent storage. A repository owner can change branch history or validation code. This is an append-only project policy with tamper detection against trusted references, not externally enforced write-once storage.
+
+Retain a trusted commit or manifest outside the mutable branch if you need to detect coordinated rewriting of content and its reference digests. Availability and stronger archival custody remain separate concerns. Do not convert successful integrity checks into confidence in a scientific claim.
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/research/process/index.json
+
+```json
+{
+  "state_id": "ASTRA-STATE-0002",
+  "energy_program": "research/index.json",
+  "protocols": [
+    "research/protocols/EDC-P-0001.json"
+  ],
+  "evaluations": [
+    "research/evaluations/EDC-V-0001.json"
+  ],
+  "decisions": [
+    "research/decisions/EDC-D-0001.json"
+  ],
+  "sources": "research/process/sources.json",
+  "graph": "research/process/graph.json",
+  "results": []
+}
+```
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/research/process/transition.json
+
+```json
+{
+  "from": "ASTRA-STATE-0001",
+  "to": "ASTRA-STATE-0002",
+  "date": "2026-09-10",
+  "provenance": "One cumulative AI-assisted review of a user-supplied follow-up; no independent panel or new empirical study.",
+  "changed": [
+    "Added a separate, falsifiable research-process program.",
+    "Added a proposed feasibility screen, resource-aware allocation record and explicit stop conditions.",
+    "Added state archives, SHA-256 file manifests, Merkle roots and parent-hash links. These did not exist as an application-level research DAG in State 0001."
+  ],
+  "why": [
+    "The follow-up exposed an implicit claim about the value of structured human-AI research.",
+    "That claim must compete against credible alternatives and justify overhead."
+  ],
+  "unchanged": [
+    "The original energy model, hypothesis, desk audit, source ledger, ten-step framing critique and challenge definition remain byte-for-byte unchanged.",
+    "Energy density is a candidate; network centrality, confidence, agreement and hashes do not prove truth.",
+    "Thermodynamic entropy remains distinct from displaced burdens.",
+    "No project result, independent replication or completed evaluation is claimed."
+  ],
+  "rejected": [
+    "Automatically adopting intelligence allocation as the right abstraction.",
+    "Claiming a novel protocol from recombining established methods.",
+    "Treating information-per-resource as a universal scalar objective.",
+    "Replacing or retroactively harmonizing State 0001.",
+    "Calling a conceptual review an experiment or ten independent reviews."
+  ],
+  "less_certain": [
+    "Whether structured interaction earns its overhead.",
+    "Whether decision quality can be scored reliably across energy services.",
+    "Whether retrospective cases can avoid model contamination."
+  ],
+  "more_certain": [
+    "The archived implementation lacks the application-level Merkle research DAG assumed by the directive.",
+    "Existing value-of-information, experimental-design and provenance methods overlap the proposal. These are documentary findings, not increased empirical confidence in the protocol."
+  ],
+  "new_questions": [
+    "Can two reviewers agree on a consequential case-specific rubric?",
+    "Which baseline and constraints are fair for the chosen service?",
+    "When does extra structure change a decision rather than just the explanation?"
+  ],
+  "next_observations": [
+    "Feasibility of blinded scoring and outcome withholding in three curated cases.",
+    "Actual resource needs and contamination risk before a comparative pilot."
+  ],
+  "confidence": {
+    "value": null,
+    "reason": "No calibrated estimate or completed protocol evaluation."
+  }
+}
+```
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/research/process/sources.json
+
+```json
+{
+  "review_scope": "Focused prior-art scan, not a systematic review. Abstract-level limits are retained.",
+  "sources": [
+    {
+      "id": "EDC-S-0005",
+      "title": "Value of information and decision pathways: Concepts and case studies",
+      "url": "https://www.nist.gov/publications/value-information-and-decision-pathways-concepts-and-case-studies",
+      "accessed": "2026-09-10",
+      "verification": "abstract_reviewed",
+      "supports": "Information acquisition has costs; value depends on use in decisions.",
+      "does_not_support": "No estimate of the value of this protocol or any proposed energy experiment."
+    },
+    {
+      "id": "EDC-S-0006",
+      "title": "NIST: What is experimental design?",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section1/pri11.htm",
+      "accessed": "2026-09-10",
+      "verification": "page_reviewed",
+      "supports": "Experimental design specifies planned changes and observed effects.",
+      "does_not_support": "No validation of this proposed pilot or sample size."
+    },
+    {
+      "id": "EDC-S-0007",
+      "title": "Center for Open Science: Preregistration",
+      "url": "https://www.cos.io/initiatives/prereg",
+      "accessed": "2026-09-10",
+      "verification": "page_reviewed",
+      "supports": "Prespecifying a plan distinguishes planned tests from exploration.",
+      "does_not_support": "Preregistration alone does not guarantee sound hypotheses or results."
+    },
+    {
+      "id": "EDC-S-0008",
+      "title": "When combinations of humans and AI are useful",
+      "url": "https://arxiv.org/abs/2405.06087",
+      "accessed": "2026-09-10",
+      "verification": "abstract_reviewed",
+      "supports": "The authors report heterogeneous effects and average losses against the better solo participant in the included studies.",
+      "does_not_support": "No direct test of our protocol or energy-domain performance. Full paper not evaluated; publisher page retrieval failed."
+    },
+    {
+      "id": "EDC-S-0009",
+      "title": "Should we be going MAD? A Look at Multi-Agent Debate Strategies for LLMs",
+      "url": "https://arxiv.org/abs/2311.17371",
+      "accessed": "2026-09-10",
+      "verification": "abstract_reviewed",
+      "supports": "The authors report evaluated debate methods did not reliably outperform other prompting strategies, with sensitivity to tuning.",
+      "does_not_support": "No universal rejection of debate or proof of performance in this project; full paper not evaluated."
+    },
+    {
+      "id": "EDC-S-0010",
+      "title": "W3C PROV Overview",
+      "url": "https://www.w3.org/TR/prov-overview/",
+      "accessed": "2026-09-10",
+      "verification": "page_reviewed",
+      "supports": "Existing standards describe provenance entities, activities and agents.",
+      "does_not_support": "Our lightweight graph is not claimed to implement or conform to PROV; provenance does not establish truth."
+    }
+  ]
+}
+```
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/research/process/graph.json
+
+```json
+{
+  "semantics": "Edges point from a record to its prerequisite; this is a provenance/dependency DAG, not a causal energy model. No evidence or result nodes are invented.",
+  "nodes": [
+    {
+      "id": "process-question",
+      "type": "PROBLEM",
+      "label": "Can a structured process improve the next research decision?",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "bounded-service",
+      "type": "SERVICE",
+      "label": "Energy service and evaluation boundary remain to be chosen",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "resource-limits",
+      "type": "RESOURCE",
+      "label": "Time, attention, compute, cost and burden caps remain unset",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "process-helps",
+      "type": "HYPOTHESIS",
+      "label": "Structure adds decision value within resource limits",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "process-costs",
+      "type": "HYPOTHESIS",
+      "label": "Structure adds overhead or correlated error without useful benefit",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "different-outcomes",
+      "type": "PREDICTION",
+      "label": "The competing process claims imply different quality-cost outcomes",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "process-pilot",
+      "type": "EXPERIMENT",
+      "label": "A proposed screen and comparative pilot",
+      "record": "research/evaluations/EDC-V-0001.json",
+      "status": "proposed"
+    },
+    {
+      "id": "pause-rule",
+      "type": "STOP_CONDITION",
+      "label": "Pause when no decision-relevant change or no feasible authorized action",
+      "record": null,
+      "status": "proposed"
+    },
+    {
+      "id": "allocation-choice",
+      "type": "DECISION",
+      "label": "Prepare the screen; do not execute a trial",
+      "record": "research/decisions/EDC-D-0001.json",
+      "status": "proposed"
+    }
+  ],
+  "edges": [
+    {
+      "from": "process-helps",
+      "to": "process-question",
+      "relation": "depends_on"
+    },
+    {
+      "from": "process-costs",
+      "to": "process-question",
+      "relation": "depends_on"
+    },
+    {
+      "from": "different-outcomes",
+      "to": "process-helps",
+      "relation": "depends_on"
+    },
+    {
+      "from": "different-outcomes",
+      "to": "process-costs",
+      "relation": "depends_on"
+    },
+    {
+      "from": "process-pilot",
+      "to": "different-outcomes",
+      "relation": "depends_on"
+    },
+    {
+      "from": "process-pilot",
+      "to": "bounded-service",
+      "relation": "depends_on"
+    },
+    {
+      "from": "process-pilot",
+      "to": "resource-limits",
+      "relation": "depends_on"
+    },
+    {
+      "from": "allocation-choice",
+      "to": "process-pilot",
+      "relation": "depends_on"
+    },
+    {
+      "from": "allocation-choice",
+      "to": "pause-rule",
+      "relation": "depends_on"
+    }
+  ]
+}
+```
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/research/protocols/EDC-P-0001.json
+
+```json
+{
+  "$schema": "../../schemas/process.schema.json",
+  "schema_version": "1.0.0",
+  "state_id": "ASTRA-STATE-0002",
+  "research_program": "process_evaluation",
+  "status": "proposed",
+  "result_ids": [],
+  "id": "EDC-P-0001",
+  "kind": "allocation_protocol",
+  "title": "Choose the next research action under explicit resource limits",
+  "claim": "Within a registered energy decision setting, the structured protocol improves consequential research choices under comparable resource caps against credible alternatives.",
+  "claim_status": "unresolved",
+  "novelty_status": "synthesis_not_demonstrated_novel",
+  "evaluation_id": "EDC-V-0001",
+  "methods": [
+    "Define a useful service, decision, beneficiary and boundary.",
+    "Keep competing predictions and initial judgments before sharing where feasible.",
+    "Compare decision value, reliability and separate resource constraints; unknown is not zero.",
+    "Check feasibility, safety, authority and cost before prerecording and acting.",
+    "Assess evidence, preserve dissent, record actual costs and choose again, wait or stop."
+  ],
+  "stop_trigger": "After two reasoning rounds without a decision-relevant change, pause for a recorded continuation justification. This provisional trigger is unvalidated.",
+  "limits": [
+    "No universal information-per-cost score.",
+    "Agreement, confidence, hashes and citations do not establish truth.",
+    "No result in the energy program proves this process is superior.",
+    "No autonomous execution, recruitment or spending."
+  ],
+  "document": "docs/allocation-protocol.md"
+}
+```
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/research/evaluations/EDC-V-0001.json
+
+```json
+{
+  "$schema": "../../schemas/process.schema.json",
+  "schema_version": "1.0.0",
+  "state_id": "ASTRA-STATE-0002",
+  "research_program": "process_evaluation",
+  "status": "proposed",
+  "result_ids": [],
+  "id": "EDC-V-0001",
+  "kind": "process_evaluation",
+  "title": "Feasibility screen before a comparative research-process pilot",
+  "protocol_id": "EDC-P-0001",
+  "stages": [
+    {
+      "name": "feasibility_screen",
+      "proposed_cases": 3,
+      "purpose": "Determine whether withheld-outcome energy decisions can be scored reliably without contamination."
+    },
+    {
+      "name": "comparative_pilot",
+      "proposed_cases": 12,
+      "proposed_services": 2,
+      "purpose": "Screen for a useful process advantage; not powered evidence of general calibration or universal superiority."
+    }
+  ],
+  "comparators": [
+    "Relevant expert alone",
+    "Competent single model selected on separate development cases",
+    "Structured human-AI group",
+    "Unstructured group with the same composition and tools as the structured group"
+  ],
+  "preregistration": {
+    "cases_and_licenses": null,
+    "information_cutoff": null,
+    "participant_and_assessor_plan": null,
+    "resource_caps": null,
+    "primary_decision_loss_rubric": null,
+    "minimum_useful_effect": null,
+    "harm_tolerance": null,
+    "sample_rationale": null,
+    "leakage_and_exclusion_rules": null,
+    "allocation_and_carryover_plan": null,
+    "analysis_plan": null,
+    "stopping_rule": null
+  },
+  "missing_reason": "These design choices require case curation and practitioner review before registration. No study has run.",
+  "decision_rules": [
+    "Invalid scoring or contaminated cases require revising the task, not declaring the protocol falsified.",
+    "A meaningful loss or failure to meet a prespecified useful-effect rule counts against this implementation within tested conditions.",
+    "An imprecise or nonsignificant result can remain unresolved.",
+    "A promising pilot earns prospective independent testing, not a general success claim."
+  ],
+  "document": "docs/allocation-pilot.md"
+}
+```
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/research/decisions/EDC-D-0001.json
+
+```json
+{
+  "$schema": "../../schemas/process.schema.json",
+  "schema_version": "1.0.0",
+  "state_id": "ASTRA-STATE-0002",
+  "research_program": "process_evaluation",
+  "status": "proposed",
+  "result_ids": [],
+  "id": "EDC-D-0001",
+  "kind": "allocation_decision",
+  "title": "Prepare a small feasibility screen for review",
+  "protocol_id": "EDC-P-0001",
+  "evaluation_id": "EDC-V-0001",
+  "selected_action": "design_feasibility_screen",
+  "rationale": "An unusable scoring task or leaked outcomes can invalidate an expensive comparison. Resolve these design risks before commissioning research runs.",
+  "alternatives": [
+    {
+      "action": "more_multi_agent_deliberation",
+      "reason_not_selected": "No specified new observation or expected decision change justifies another round."
+    },
+    {
+      "action": "physical_energy_experiment",
+      "reason_not_selected": "The process comparison and energy use case are not registered; feasibility and authorization are missing."
+    },
+    {
+      "action": "full_comparative_trial",
+      "reason_not_selected": "Cases, scoring, reviewers and caps are not ready."
+    },
+    {
+      "action": "wait",
+      "reason_not_selected": "A bounded design document can be prepared now; execution waits for prerequisites."
+    }
+  ],
+  "resource_estimates": {
+    "human_attention": {
+      "value": null,
+      "unit": "person-hours",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "inference": {
+      "value": null,
+      "unit": "tokens",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "electricity": {
+      "value": null,
+      "unit": "kWh",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "spend": {
+      "value": null,
+      "unit": "USD",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "elapsed_time": {
+      "value": null,
+      "unit": "hours",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "laboratory_time": {
+      "value": null,
+      "unit": "hours",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "materials": {
+      "value": null,
+      "unit": "case-specific units",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "opportunity_cost": {
+      "value": null,
+      "unit": "unvalued displaced work",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    },
+    "environmental_burden": {
+      "value": null,
+      "unit": "case-specific measures",
+      "reason": "Not measured or budgeted; no research run is authorized."
+    }
+  },
+  "expected_decision_value": null,
+  "authority": "Design recommendation only. No participants, funds, laboratory work or model runs are committed.",
+  "revisit_trigger": "A curator and practitioners specify viable cases, outcome-based scoring, assessors and resource caps. Otherwise wait or reframe.",
+  "retrospective_assessment": null
+}
+```
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/research/states/index.json
+
+```json
+{
+  "states": [
+    {
+      "id": "ASTRA-STATE-0001",
+      "manifest": "research/states/ASTRA-STATE-0001/manifest.json",
+      "sha256": "070caf221fabcaf8afdb818bc108f0c5e8e437e46d4a672923aeef3ad0fd8d1b"
+    },
+    {
+      "id": "ASTRA-STATE-0002",
+      "manifest": "research/states/ASTRA-STATE-0002/manifest.json",
+      "sha256": "68228c113ade84b3ad837bc267c60f994251c987486f4f8a7eda5f70dec611b7"
     }
   ]
 }

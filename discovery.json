@@ -6,6 +6,10 @@
   "purpose": "Problem-framing research; no project results are recorded at launch. Consult canonical records for current status.",
   "pages": [
     {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/next.html",
+      "title": "What should we learn next?"
+    },
+    {
       "url": "https://stewalexander-com.github.io/energy-density-challenge/license.html",
       "title": "MIT license"
     },
@@ -100,6 +104,54 @@
       "media_type": "application/json"
     },
     {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/docs/state-0002-review.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/docs/allocation-protocol.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/docs/allocation-pilot.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/docs/research-states.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/process/index.json",
+      "media_type": "application/json"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/process/transition.json",
+      "media_type": "application/json"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/process/sources.json",
+      "media_type": "application/json"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/process/graph.json",
+      "media_type": "application/json"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/protocols/EDC-P-0001.json",
+      "media_type": "application/json"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/evaluations/EDC-V-0001.json",
+      "media_type": "application/json"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/decisions/EDC-D-0001.json",
+      "media_type": "application/json"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/states/index.json",
+      "media_type": "application/json"
+    },
+    {
       "url": "https://stewalexander-com.github.io/energy-density-challenge/LICENSE",
       "media_type": "text/plain"
     }
@@ -110,6 +162,7 @@
     "https://stewalexander-com.github.io/energy-density-challenge/schemas/experiment.schema.json",
     "https://stewalexander-com.github.io/energy-density-challenge/schemas/hypothesis.schema.json",
     "https://stewalexander-com.github.io/energy-density-challenge/schemas/model.schema.json",
+    "https://stewalexander-com.github.io/energy-density-challenge/schemas/process.schema.json",
     "https://stewalexander-com.github.io/energy-density-challenge/schemas/result.schema.json"
   ]
 }

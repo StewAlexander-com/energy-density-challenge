@@ -18,6 +18,12 @@ Energy density is one candidate. It must be compared with efficiency, service re
 
 [Twenty-step UX review](docs/ux-review.md) documents the readability and interface revision.
 
+## What should we learn next?
+
+[State 0002: choosing the next research action](https://stewalexander-com.github.io/energy-density-challenge/next.html) adds a separate, untested process hypothesis and a proposed cheap evaluation. Read the [ten cumulative review passes](docs/state-0002-review.md), [protocol](docs/allocation-protocol.md) and [state transition](research/process/transition.json). No process evaluation has been registered or run.
+
+The original implementation is preserved as [ASTRA-STATE-0001](https://github.com/StewAlexander-com/energy-density-challenge/tree/3b55fbab2ea9b94e0f78e9d458d5f6144cbed026). [State manifests](research/states/index.json) record file digests, Merkle roots and parent hashes; integrity does not establish scientific truth. See [verification instructions](docs/research-states.md).
+
 ## What exists
 
 - One proposed, uncalibrated [systems model](research/models/EDC-M-0001.json), created because the original model was not supplied. Every edge is an untested conditional hypothesis.

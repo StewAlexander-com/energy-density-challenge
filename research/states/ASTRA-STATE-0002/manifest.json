@@ -1,0 +1,92 @@
+{
+  "archive": "source.tar",
+  "archive_sha256": "73b4f513c7f6148d8173eeeee7808aede90634f3e4e8d8c2edf03c4664672ea5",
+  "baseline_commit": null,
+  "files": [
+    {
+      "bytes": 1098,
+      "path": "LICENSE",
+      "sha256": "88dad104a7beee82ebe16291f24253c75e05c01f5f626502ffb01b593bba6cba"
+    },
+    {
+      "bytes": 5927,
+      "path": "docs/allocation-pilot.md",
+      "sha256": "52b4ce658ffe6726b56ff529f1a51faecbfc3d5a3d4afe11137a19ea6ddcbbb3"
+    },
+    {
+      "bytes": 7518,
+      "path": "docs/allocation-protocol.md",
+      "sha256": "846f053467492f0086ec960bb0f3a55176b426b63263f8f79fc816515ec35b13"
+    },
+    {
+      "bytes": 3742,
+      "path": "docs/research-states.md",
+      "sha256": "f78250d364a6a74f73232550f383410ae4731b3d0920ac0891059ef14bd68188"
+    },
+    {
+      "bytes": 17800,
+      "path": "docs/state-0002-directive.txt",
+      "sha256": "1213c2cb28c451a773c486dd47140e9bfddbb31bf830e83c198623e5ca32ed8c"
+    },
+    {
+      "bytes": 12235,
+      "path": "docs/state-0002-review.md",
+      "sha256": "437f2b3875b4d7198729636123b6bd05c8c2b32c0cc3897a53d2834a3202da74"
+    },
+    {
+      "bytes": 3037,
+      "path": "research/decisions/EDC-D-0001.json",
+      "sha256": "6791b9d7f38315876fb1bbdd5fb044a2036a30cd0eaf5aa40fbcf0785c643eda"
+    },
+    {
+      "bytes": 2092,
+      "path": "research/evaluations/EDC-V-0001.json",
+      "sha256": "a1fe55ae8ccfc882c2876e1da350d30689f037bb64e60b557b58797711e63ee9"
+    },
+    {
+      "bytes": 3002,
+      "path": "research/process/graph.json",
+      "sha256": "83e3dbd8ade329ff6a2664a7092c236a35807036883334525d62356b3103b2ab"
+    },
+    {
+      "bytes": 378,
+      "path": "research/process/index.json",
+      "sha256": "8acd4d2ef7b07a91906ae242ec5c0ad8aaa153af6fb6767b5d37a713c7ba7159"
+    },
+    {
+      "bytes": 2939,
+      "path": "research/process/sources.json",
+      "sha256": "54ed4732d21f5e26c0760bd8b6105c3eb29956a001741d6353c4c863ed064533"
+    },
+    {
+      "bytes": 2691,
+      "path": "research/process/transition.json",
+      "sha256": "a45c1b9a696293645d06f584e2bff4cd957e26f24f6e48362b4dbb1aff03bcfc"
+    },
+    {
+      "bytes": 1583,
+      "path": "research/protocols/EDC-P-0001.json",
+      "sha256": "45c8b08fbac47a6b4e69a22b959727fb7a5e8c43a4ca1bb1ec8fc5c26f667e38"
+    },
+    {
+      "bytes": 6534,
+      "path": "schemas/process.schema.json",
+      "sha256": "f1287ba3be293ea77f2782248b3c6bf851e5c5240eaa0ffec21f56284ae8864c"
+    }
+  ],
+  "hash_algorithm": "sha256",
+  "id": "ASTRA-STATE-0002",
+  "kind": "conceptual_extension",
+  "limits": "Tamper-evident against a trusted prior manifest or commit; not externally immutable, independently reviewed, or proof of truth.",
+  "merkle_root": "88ba5d04387df18aedb9987908202fdf5b60794ba1025d3f7eebf7a92c4f88f9",
+  "merkle_scheme": "edc-path-content-v1",
+  "parents": [
+    {
+      "id": "ASTRA-STATE-0001",
+      "manifest_sha256": "070caf221fabcaf8afdb818bc108f0c5e8e437e46d4a672923aeef3ad0fd8d1b"
+    }
+  ],
+  "scientific_validation": false,
+  "scope": "Selected State 0002 research documents and records; the publishing commit retains the full implementation",
+  "sealed_on": "2026-09-10"
+}

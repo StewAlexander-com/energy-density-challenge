@@ -1,0 +1,688 @@
+FOLLOW-UP DIRECTIVE: PRESERVE STATE 0001 AND EXPAND THE RESEARCH QUESTION
+
+You have completed the first independent state of the Energy Density Challenge.
+
+Treat your existing implementation as ASTRA-STATE-0001.
+
+Do not overwrite, retroactively harmonize, or silently revise the reasoning that produced it. Preserve its conclusions, criticisms, uncertainties, rejected framings, and provenance as an immutable historical research state.
+
+This follow-up is not a request to return to the original Energy Density Challenge framing.
+
+It is a request to investigate a deeper possibility revealed by your own analysis.
+
+⸻
+
+THE EMERGING QUESTION
+
+Your State 0001 analysis identified an important problem with the founding premise:
+
+Energy density may be an intervention variable, but it should not automatically be treated as the objective.
+
+You instead moved toward questions such as:
+
+For a specified useful service, what constraint matters most, and which intervention improves the outcome without creating unacceptable burdens elsewhere?
+
+That correction should be preserved.
+
+Now investigate the possibility that the deeper project is not fundamentally an Energy Density Challenge at all.
+
+It may be an attempt to construct:
+
+A PROTOCOL FOR DIRECTING INTELLIGENCE AT ENERGY PROBLEMS
+
+The goal is not to make an AI “solve energy.”
+
+The goal is to determine whether a structured interaction among:
+
+* humans,
+* different AI systems,
+* scientific literature,
+* models and simulations,
+* physical experiments,
+* observations,
+* engineering constraints,
+* economic constraints,
+* environmental constraints,
+* and accumulated negative results
+
+can make better research decisions about energy than any participant or method would reliably make alone.
+
+Do not assume this proposition is true.
+
+Test it.
+
+⸻
+
+DO NOT REGRESS
+
+Preserve the epistemic improvements already introduced in State 0001.
+
+In particular, do not regress to:
+
+1. Energy density as the predetermined objective
+
+Energy density remains a candidate variable and potentially important systems leverage point.
+
+It must compete against alternatives.
+
+2. Network centrality as proof of causal leverage
+
+A systems map can nominate candidates.
+
+It cannot establish winners.
+
+3. Multi-AI agreement as independent evidence
+
+Different models may share training sources, assumptions, cultural priors, architectures, benchmarks, and failure modes.
+
+Agreement is evidence about agreement.
+
+It is not automatically evidence about reality.
+
+4. “Entropy” as a metaphor for every displaced burden
+
+Retain the scientifically precise distinction between thermodynamic entropy and broader displaced burdens.
+
+Continue asking:
+
+Where did the entropy go?
+
+where thermodynamically appropriate.
+
+Also ask:
+
+Where did the burdens go?
+
+for costs displaced into materials, mining, manufacturing, toxicity, infrastructure, land, water, emissions, geopolitics, labor, safety, waste, or other systems.
+
+5. Confidence as truth
+
+Confidence remains conditional on assumptions, evidence, methodology, system boundaries, and current knowledge.
+
+6. Immutability as truth
+
+Cryptographic integrity establishes that a research state has not been silently altered.
+
+It does not establish that the research state is correct.
+
+7. Endless deliberation as intelligence
+
+More inference is not necessarily more knowledge.
+
+The protocol must be capable of deciding that the next rational action is an observation, experiment, literature search, human consultation, engineering prototype—or no action at all.
+
+⸻
+
+THE NEW RESEARCH OBJECT
+
+Investigate whether we can construct a scientific intelligence-allocation protocol for energy research.
+
+Its purpose would be to answer recursively:
+
+Given what is currently known, what is the highest-value next use of intelligence, measurement, experimentation, or resources?
+
+That may mean:
+
+* thinking more,
+* asking another AI,
+* asking a human expert,
+* searching prior art,
+* collecting new data,
+* constructing a simulation,
+* performing a calculation,
+* building a prototype,
+* running an experiment,
+* replicating an experiment,
+* challenging a system boundary,
+* searching for displaced burdens,
+* changing the objective,
+* abandoning a hypothesis,
+* or stopping until new information becomes available.
+
+The protocol should not privilege computation merely because AI computation is available.
+
+⸻
+
+INTELLIGENCE HAS A COST
+
+Treat intelligence itself as a constrained resource.
+
+Every research action consumes some combination of:
+
+* inference,
+* compute,
+* electricity,
+* human attention,
+* laboratory time,
+* equipment,
+* materials,
+* money,
+* opportunity cost,
+* elapsed time,
+* and environmental resources.
+
+Therefore ask:
+
+What research action produces the greatest expected reduction in decision-relevant uncertainty per constrained resource?
+
+Do not assume this exact formulation is optimal.
+
+Critique and improve it if necessary.
+
+⸻
+
+INFORMATION GAIN BEFORE COMPUTE
+
+Suppose an additional $10 million of AI inference is expected to produce less decision-relevant information than a $50,000 physical experiment.
+
+A rational protocol should prefer the experiment.
+
+Suppose another AI perspective is highly correlated with existing perspectives and contributes little new information.
+
+A rational protocol should not add it merely to increase the number of agents.
+
+Suppose two hypotheses remain unresolved after extensive reasoning but predict measurably different outcomes under one inexpensive test.
+
+Stop debating.
+
+Run the discriminating test.
+
+Suppose no feasible experiment can currently discriminate between hypotheses.
+
+Preserve the disagreement and identify the missing capability rather than manufacturing consensus.
+
+⸻
+
+THE RECURSIVE RESEARCH LOOP
+
+Investigate a loop resembling:
+
+DEFINE → EXPAND → CHALLENGE → DISCRIMINATE → TEST → UPDATE → ALLOCATE → EXPAND AGAIN
+
+But do not accept this loop merely because it has been proposed.
+
+Attack it.
+
+Determine whether stages are missing, redundant, incorrectly ordered, or conceptually confused.
+
+The protocol itself is a hypothesis.
+
+⸻
+
+DEFINE THE SERVICE BEFORE OPTIMIZING THE TECHNOLOGY
+
+For an energy-related problem, first ask:
+
+What useful service are we actually trying to provide?
+
+Examples might include:
+
+* transportation,
+* computation,
+* industrial heat,
+* cooling,
+* fertilizer production,
+* electricity storage,
+* grid stability,
+* food production,
+* residential heating,
+* water treatment,
+* remote sensing,
+* manufacturing,
+* or another useful service.
+
+Then determine which constraints dominate within the specified boundary.
+
+Candidate variables may include:
+
+* energy density,
+* specific energy,
+* volumetric energy density,
+* power density,
+* efficiency,
+* exergy efficiency,
+* storage duration,
+* transmission,
+* conversion losses,
+* computation per joule,
+* materials availability,
+* capital intensity,
+* infrastructure requirements,
+* reliability,
+* resilience,
+* maintainability,
+* land,
+* water,
+* emissions,
+* safety,
+* lifecycle burden,
+* deployment speed,
+* or behavioral/service redesign.
+
+Do not assume this list is complete.
+
+⸻
+
+MAKE ENERGY DENSITY COMPETE
+
+Energy density should remain an important founding hypothesis.
+
+Do not discard it merely because its privileged status has been removed.
+
+Instead, make it compete fairly.
+
+Across many energy-service problems, determine whether energy-density interventions repeatedly dominate or materially improve the Pareto frontier.
+
+If they do, the founding hypothesis becomes more strongly supported.
+
+If energy density dominates only certain domains, identify those domains.
+
+If another variable repeatedly dominates, follow that evidence.
+
+If there is no universal leverage variable, investigate whether the energy system instead contains a topology of constraints:
+
+Different useful services may be bottlenecked by different physical, economic, infrastructural, environmental, or informational constraints.
+
+That possibility should itself be tested rather than assumed.
+
+⸻
+
+MULTIPLE INTELLIGENCES WITHOUT ARTIFICIAL CONSENSUS
+
+Different intelligences should initially investigate important questions independently where feasible.
+
+Do not immediately expose every participant to every other participant’s reasoning.
+
+Premature sharing can create correlated reasoning and convergence around an attractive but incorrect framing.
+
+Preserve independent branches.
+
+Later compare them.
+
+Record:
+
+* independent convergence,
+* disagreement,
+* unique hypotheses,
+* shared assumptions,
+* likely correlated sources,
+* contradictory predictions,
+* confidence changes,
+* and what evidence could discriminate between competing positions.
+
+The objective is not consensus.
+
+The objective is better-calibrated belief and better research decisions.
+
+⸻
+
+REALITY IS THE ARBITER
+
+No AI receives epistemic authority merely because it is powerful.
+
+No human receives epistemic authority merely because they originated the project.
+
+No committee receives epistemic authority merely because its members agree.
+
+No Merkle root establishes scientific truth.
+
+No citation count establishes scientific truth.
+
+No simulation establishes physical truth outside its assumptions.
+
+No confidence score establishes truth.
+
+When competing explanations make distinguishable predictions, prioritize contact with reality.
+
+Measurement, reproducibility, experiment, observation, and successful prediction should progressively constrain the research graph.
+
+⸻
+
+PRESERVE DISAGREEMENT
+
+Do not average incompatible hypotheses into artificial compromise.
+
+Create branches.
+
+For example:
+
+HYPOTHESIS A
+      │
+      ├── prediction
+      ├── evidence
+      └── assumptions
+HYPOTHESIS B
+      │
+      ├── different prediction
+      ├── evidence
+      └── assumptions
+            ↓
+   DISCRIMINATING TEST
+            ↓
+evidence updates both branches
+
+A branch that loses support should remain historically accessible.
+
+A falsified idea is research output.
+
+A null result is research output.
+
+A failed experiment is research output.
+
+A disagreement that cannot yet be resolved is research output.
+
+⸻
+
+THE PROTOCOL MUST BE ABLE TO CHALLENGE ITSELF
+
+This is critical.
+
+The proposed intelligence-allocation protocol must not become another privileged premise.
+
+Ask:
+
+Does structured Human + AI or AI + AI research actually produce better-calibrated decisions than plausible alternatives?
+
+Compare it, where possible, against:
+
+* individual expert reasoning,
+* single-model reasoning,
+* conventional literature review,
+* conventional research teams,
+* unstructured multi-agent discussion,
+* prediction/forecasting approaches,
+* established scientific workflows,
+* optimization systems,
+* automated laboratories,
+* and other relevant methods.
+
+Determine what “better” means.
+
+Possible measures might include:
+
+* calibration,
+* prediction accuracy,
+* falsification rate,
+* useful hypotheses generated,
+* information gain,
+* cost per resolved uncertainty,
+* time to discriminating experiment,
+* replication success,
+* discovery of hidden assumptions,
+* detection of displaced burdens,
+* resistance to correlated error,
+* and eventual real-world performance.
+
+Critique these metrics too.
+
+Avoid Goodharting the research process around a convenient score.
+
+⸻
+
+A POSSIBLE SUCCESS CRITERION
+
+Consider—but do not automatically adopt—the following:
+
+The protocol succeeds if it produces better-calibrated research decisions per constrained resource than credible alternative research processes.
+
+“Better” must remain domain- and boundary-dependent.
+
+A result that appears worse under one boundary may be better under another.
+
+Therefore every evaluation should state:
+
+Given this particular boundary around reality, this is what the evidence currently supports.
+
+⸻
+
+UNKNOWN UNKNOWNS
+
+The system must distinguish:
+
+* known facts,
+* assumptions,
+* known unknowns,
+* competing interpretations,
+* unresolved contradictions,
+* and mechanisms intended to expose unknown unknowns.
+
+Unknown unknowns cannot simply be listed.
+
+Instead ask:
+
+What diversity of perspective, observation, boundary change, adversarial test, anomaly search, or experiment is most likely to reveal something our current framing prevents us from seeing?
+
+Treat anomalies as potentially valuable signal rather than automatically removing them as noise.
+
+⸻
+
+STOP CONDITIONS
+
+Design explicit mechanisms for recognizing diminishing returns.
+
+If repeated reasoning no longer materially changes:
+
+* predictions,
+* confidence,
+* proposed experiments,
+* system boundaries,
+* or decisions,
+
+the protocol should ask whether further inference has useful expected information gain.
+
+Possible outcomes include:
+
+CONTINUE REASONING
+
+SEEK DIFFERENT PERSPECTIVE
+
+SEARCH FOR EVIDENCE
+
+RUN EXPERIMENT
+
+REPLICATE
+
+REFRAME PROBLEM
+
+PRESERVE DISAGREEMENT
+
+WAIT FOR NEW INFORMATION
+
+STOP
+
+Non-action must remain a legitimate output.
+
+⸻
+
+THE RESEARCH GRAPH
+
+Extend the existing Merkle-backed research DAG rather than replacing it.
+
+Consider representing not only scientific claims but research decisions themselves.
+
+Possible node types:
+
+* PROBLEM
+* SERVICE
+* BOUNDARY
+* CONSTRAINT
+* HYPOTHESIS
+* EVIDENCE
+* MODEL
+* PREDICTION
+* EXPERIMENT
+* RESULT
+* REPLICATION
+* CONTRADICTION
+* BURDEN
+* DECISION
+* RESOURCE
+* CONFIDENCE_UPDATE
+* STOP_CONDITION
+* RESEARCH_STATE
+
+Each research decision should ideally be able to answer:
+
+Why was this the next thing we chose to do?
+
+and later:
+
+Given what we subsequently learned, was that allocation of intelligence justified?
+
+This creates the possibility of studying the research process itself.
+
+⸻
+
+TWO EXPERIMENTS ARE NOW OCCURRING
+
+Recognize explicitly that this project may now contain two nested research programs.
+
+Experiment A — Energy
+
+Can structured research discover meaningful interventions in important energy systems?
+
+Experiment B — Intelligence Allocation
+
+Can differently constrained human and artificial intelligences interacting through a structured, falsifiable research protocol produce better-calibrated research decisions than credible alternatives?
+
+Experiment B must not be declared successful because Experiment A produces an interesting idea.
+
+Both require their own evidence.
+
+⸻
+
+YOUR CURRENT ROLE
+
+Do not simply implement these instructions.
+
+Perform another adversarial analysis.
+
+Ask:
+
+1. Is “directing intelligence at energy problems” actually the right abstraction?
+2. Is “intelligence allocation” scientifically meaningful and measurable?
+3. Are we reinventing established fields under new terminology?
+4. Which existing disciplines already address pieces of this problem?
+5. What would make this protocol genuinely novel?
+6. What would make it useless?
+7. What would falsify the central hypothesis?
+8. Where could the architecture produce confident group error?
+9. How might humans manipulate it?
+10. How might AI systems game its metrics?
+11. What assumptions from State 0001 remain unchallenged?
+12. What is the cheapest experiment that could tell us whether this direction is worth pursuing?
+
+Research prior art where appropriate.
+
+Distinguish clearly between:
+
+EXISTING ESTABLISHED METHODS
+
+OUR SYNTHESIS OF EXISTING METHODS
+
+POTENTIALLY NOVEL CONTRIBUTIONS
+
+SPECULATION
+
+Do not manufacture novelty.
+
+⸻
+
+STATE TRANSITION
+
+Preserve:
+
+ASTRA-STATE-0001
+
+Create the next state as a child of it:
+
+ASTRA-STATE-0002
+
+Document explicitly:
+
+* what changed,
+* why it changed,
+* what remained unchanged,
+* what was rejected,
+* what became less certain,
+* what became more certain,
+* what new questions appeared,
+* and which observations or experiments would most efficiently reduce important uncertainty.
+
+The Merkle/DAG ancestry should make this transition auditable.
+
+Do not rewrite State 0001 to make the evolution appear cleaner than it actually was.
+
+Messy intellectual history is evidence.
+
+⸻
+
+DO NOT BUILD AN AI SHRINE
+
+This project is not intended to demonstrate that AI is brilliant.
+
+It is not intended to demonstrate that humans are brilliant.
+
+It is not intended to demonstrate that multi-agent systems are superior.
+
+It is not intended to validate the founder’s energy-density hypothesis.
+
+It is not intended to validate this follow-up hypothesis.
+
+It is intended to create conditions under which bad ideas can die cheaply and promising ideas can earn progressively more expensive tests.
+
+That principle should influence the architecture.
+
+⸻
+
+THE DEEPEST QUESTION
+
+Ultimately investigate whether a research system can become progressively better at answering:
+
+What should we try to learn next?
+
+And then:
+
+What is the least wasteful reliable way to learn it?
+
+If that process repeatedly directs intelligence toward useful experiments, eliminates weak hypotheses early, preserves important disagreement, detects displaced burdens, and improves calibration over time, it may constitute something more general than an Energy Density Challenge.
+
+It may represent the beginnings of a scientific intelligence-allocation protocol.
+
+Do not claim that it does.
+
+Find out.
+
+⸻
+
+FINAL DIRECTIVE
+
+Build forward from State 0001 without erasing it.
+
+Challenge this follow-up as aggressively as you challenged the original premise.
+
+Energy density is no longer entitled to win.
+
+Multi-AI reasoning is no longer entitled to win.
+
+The protocol itself is no longer entitled to win.
+
+Humans are not entitled to win.
+
+AI is not entitled to win.
+
+The process should make increasingly expensive commitments only as evidence earns them.
+
+Preserve uncertainty.
+
+Preserve dissent.
+
+Preserve provenance.
+
+Prefer discriminating evidence over rhetorical convergence.
+
+Prefer inexpensive failure over expensive self-deception.
+
+And when further reasoning has lower expected value than contact with reality:
+
+stop reasoning and test.

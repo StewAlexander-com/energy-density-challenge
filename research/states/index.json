@@ -1,0 +1,14 @@
+{
+  "states": [
+    {
+      "id": "ASTRA-STATE-0001",
+      "manifest": "research/states/ASTRA-STATE-0001/manifest.json",
+      "sha256": "070caf221fabcaf8afdb818bc108f0c5e8e437e46d4a672923aeef3ad0fd8d1b"
+    },
+    {
+      "id": "ASTRA-STATE-0002",
+      "manifest": "research/states/ASTRA-STATE-0002/manifest.json",
+      "sha256": "68228c113ade84b3ad837bc267c60f994251c987486f4f8a7eda5f70dec611b7"
+    }
+  ]
+}

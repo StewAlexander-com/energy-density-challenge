@@ -130,6 +130,13 @@ def main():
  for metric in challenge['metrics']:
   if metric['value'] is None:require(bool(metric['missing_reason']),'Unknown metric requires a reason.')
  require(len({m['id'] for m in challenge['metrics']})==len(challenge['metrics']),'Duplicate metric ID.')
+ try:
+  from .research_states import validate as validate_states
+  from .validate_process import validate as validate_process
+ except ImportError:
+  from research_states import validate as validate_states
+  from validate_process import validate as validate_process
+ validate_states(ROOT);validate_process(ROOT)
  pages=validate_links(ROOT)
  print(f'Validated {count} structured records, all schemas and cross-references, and {pages} HTML pages. No scientific validation is implied.')
 if __name__=='__main__':
