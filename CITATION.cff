@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this project, cite the repository and the exact commit you reviewed. These are evolving project materials, not a peer-reviewed publication."
+title: "Energy Density Challenge"
+type: software
+authors:
+  - name: "Energy Density Challenge contributors"
+repository-code: "https://github.com/StewAlexander-com/energy-density-challenge"
+url: "https://stewalexander-com.github.io/energy-density-challenge/"
+license: MIT
+abstract: "An open research commons whose first assignment is to determine whether energy density is the right problem framing. The systems model is proposed and uncalibrated; no completed project study or independent replication is recorded at launch."
+keywords:
+  - energy density
+  - problem framing
+  - open research
+  - systems thinking
+  - reproducible research

@@ -1,0 +1,32 @@
+# Energy Density Challenge
+
+> First determine whether energy density is the right problem framing. Compare feasible alternatives for a specified useful service.
+
+The systems model is proposed and uncalibrated. The framing hypothesis is unresolved and the first desk audit is proposed. No completed project study, independent replication or validated leverage ranking is recorded. Read current canonical records before relying on this summary. Background definitions are not project results.
+
+## Start here
+
+- [AI instructions](https://stewalexander-com.github.io/energy-density-challenge/AI_CHALLENGE.md): Reading order, evidence rules and first deliverable.
+- [Challenge record](https://stewalexander-com.github.io/energy-density-challenge/challenge.json): Mission, current phase and missing evidence.
+- [Framing review](https://stewalexander-com.github.io/energy-density-challenge/review.html): Ten cumulative passes, not independent peer review.
+- [Research guide](https://stewalexander-com.github.io/energy-density-challenge/guide.html): Method, safety, sources and review process.
+- [Research index](https://stewalexander-com.github.io/energy-density-challenge/research/index.json): Permanent identifiers and current statuses.
+- [File manifest](https://stewalexander-com.github.io/energy-density-challenge/discovery.json): Machine-readable paths and media types.
+- [Combined reading pack](https://stewalexander-com.github.io/energy-density-challenge/llms-full.txt): Generated from canonical documents and records.
+
+## Research records
+
+- [challenge.json](https://stewalexander-com.github.io/energy-density-challenge/challenge.json)
+- [research/index.json](https://stewalexander-com.github.io/energy-density-challenge/research/index.json)
+- [research/models/EDC-M-0001.json](https://stewalexander-com.github.io/energy-density-challenge/research/models/EDC-M-0001.json)
+- [research/hypotheses/EDC-H-0001.json](https://stewalexander-com.github.io/energy-density-challenge/research/hypotheses/EDC-H-0001.json)
+- [research/experiments/EDC-E-0001.json](https://stewalexander-com.github.io/energy-density-challenge/research/experiments/EDC-E-0001.json)
+- [research/literature/sources.json](https://stewalexander-com.github.io/energy-density-challenge/research/literature/sources.json)
+
+## Review and reuse
+
+- [Draft a question](https://stewalexander-com.github.io/energy-density-challenge/contribute.html)
+- [Downloads and citation](https://stewalexander-com.github.io/energy-density-challenge/resources.html)
+- [Citation metadata](https://stewalexander-com.github.io/energy-density-challenge/CITATION.cff)
+- [MIT license for original project content](https://stewalexander-com.github.io/energy-density-challenge/LICENSE)
+- [Interface review](https://stewalexander-com.github.io/energy-density-challenge/docs/ux-review.md)

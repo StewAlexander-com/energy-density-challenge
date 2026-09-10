@@ -1,4 +1,4 @@
-/* Progressive enhancement only. No requests, automatic submission, agents or device access. */
+/* Progressive enhancement only. No automatic requests or submission. Sharing requires an explicit click. */
 'use strict';
 const EDC_REPOSITORY = 'https://github.com/StewAlexander-com/energy-density-challenge';
 function calculateEnergy(savingPercent, growthPercent) {
@@ -31,6 +31,33 @@ function formatDraft(draft) {
 // Export the accounting and draft guards for regression checks without a browser dependency.
 if (typeof module !== 'undefined' && module.exports) module.exports = {calculateEnergy,makeDraft,formatDraft};
 if (typeof document !== 'undefined') {
+  const shareUrl = document.getElementById('share-url');
+  if (shareUrl) {
+    const status = document.getElementById('share-status');
+    const copy = document.getElementById('copy-link');
+    const native = document.getElementById('native-share');
+    copy.hidden = false;
+    copy.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(shareUrl.value);
+        status.textContent = 'Link copied. Paste it into your preferred app.';
+      } catch {
+        shareUrl.focus(); shareUrl.select();
+        status.textContent = 'Select and copy the page link above.';
+      }
+    });
+    if (typeof navigator.share === 'function') {
+      native.hidden = false;
+      native.addEventListener('click', async () => {
+        try {
+          await navigator.share({title: document.title, url: shareUrl.value});
+          status.textContent = 'Sharing dialog closed.';
+        } catch (error) {
+          status.textContent = error.name === 'AbortError' ? 'Sharing canceled. You can still copy the link.' : 'Sharing is unavailable here. Copy the link instead.';
+        }
+      });
+    }
+  }
   const scenarios = {
     transport:{title:'Move the same load over the same route.',density:'The weight or size of the complete storage system limits the load or range.',alternative:'A more efficient vehicle, a better route or better charging access.',boundary:'The load, route, reliability and lifetime. Include the full vehicle and energy system.'},
     heat:{title:'Keep the same space at the same temperature.',density:'There is too little space for the heat storage that is needed.',alternative:'Better insulation, a heat pump or better heating controls.',boundary:'Indoor temperature, weather, occupancy and reliability. Include the equipment’s lifetime and energy supply.'},

@@ -1,0 +1,107 @@
+{
+  "name": "Energy Density Challenge",
+  "url": "https://stewalexander-com.github.io/energy-density-challenge/",
+  "repository": "https://github.com/StewAlexander-com/energy-density-challenge",
+  "license": "https://stewalexander-com.github.io/energy-density-challenge/LICENSE",
+  "purpose": "Problem-framing research; no project results are recorded at launch. Consult canonical records for current status.",
+  "pages": [
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/",
+      "title": "Is energy density the right problem?"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/explore.html",
+      "title": "Explore the assumptions"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/guide.html",
+      "title": "Research guide"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/contribute.html",
+      "title": "Contribute a question"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/review.html",
+      "title": "Ten cumulative reviews"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/ux-review.html",
+      "title": "Twenty-step UX review"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/resources.html",
+      "title": "Share and reuse"
+    }
+  ],
+  "files": [
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/README.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/AI_CHALLENGE.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/docs/ten-step-review.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/METHODOLOGY.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/SAFETY.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/CONTRIBUTING.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/docs/model-methodology.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/docs/research-protocol.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/docs/governance.md",
+      "media_type": "text/markdown"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/challenge.json",
+      "media_type": "application/json"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/index.json",
+      "media_type": "application/json"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/models/EDC-M-0001.json",
+      "media_type": "application/json"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/hypotheses/EDC-H-0001.json",
+      "media_type": "application/json"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/experiments/EDC-E-0001.json",
+      "media_type": "application/json"
+    },
+    {
+      "url": "https://stewalexander-com.github.io/energy-density-challenge/research/literature/sources.json",
+      "media_type": "application/json"
+    }
+  ],
+  "schemas": [
+    "https://stewalexander-com.github.io/energy-density-challenge/schemas/challenge.schema.json",
+    "https://stewalexander-com.github.io/energy-density-challenge/schemas/draft.schema.json",
+    "https://stewalexander-com.github.io/energy-density-challenge/schemas/experiment.schema.json",
+    "https://stewalexander-com.github.io/energy-density-challenge/schemas/hypothesis.schema.json",
+    "https://stewalexander-com.github.io/energy-density-challenge/schemas/model.schema.json",
+    "https://stewalexander-com.github.io/energy-density-challenge/schemas/result.schema.json"
+  ]
+}

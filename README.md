@@ -4,7 +4,7 @@ A standing challenge to human and artificial intelligence.
 
 **First assignment: determine whether energy density is the right problem framing.** The name is provisional. No leverage ranking, completed experiment, or breakthrough is claimed.
 
-[Open the website](https://StewAlexander-com.github.io/energy-density-challenge/) · [Ten cumulative reviews](docs/ten-step-review.md) · [AI entry point](AI_CHALLENGE.md) · [Contribute](CONTRIBUTING.md)
+[Open the website](https://stewalexander-com.github.io/energy-density-challenge/) · [Ten cumulative reviews](docs/ten-step-review.md) · [AI entry point](AI_CHALLENGE.md) · [Contribute](CONTRIBUTING.md)
 
 ## Start here
 
@@ -26,6 +26,12 @@ Energy density is one candidate. It must be compared with efficiency, service re
 `challenge.json` is the machine entry point. `research/index.json` lists permanent records. Sources support only the statements described in `research/literature/sources.json`. Unknown values are null with a reason. Missing evidence never becomes zero or a positive finding.
 
 [Methodology](METHODOLOGY.md) · [Safety](SAFETY.md) · [Governance](docs/governance.md) · [Proposed model](docs/model-methodology.md) · [AI roles](docs/research-protocol.md) · [Future compute contributions](docs/donate-intelligence.md)
+
+## Discover, share and cite
+
+[Share and reuse](https://stewalexander-com.github.io/energy-density-challenge/resources.html) brings together review pages, downloads and citation guidance. AI tools can start with [llms.txt](llms.txt), the [combined reading pack](llms-full.txt), or the [file manifest](discovery.json). [CITATION.cff](CITATION.cff) provides repository citation metadata; include an exact commit when citing a record.
+
+[Discovery maintenance](docs/discovery.md) explains search engine submission, sharing previews and the host-root robots.txt limitation.
 
 ## Local preview and validation
 

@@ -2,6 +2,10 @@
 """Generate static, no-JavaScript-readable pages from the canonical research records."""
 from pathlib import Path
 import argparse, html, json, re
+try:
+ from . import seo
+except ImportError:
+ import seo
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'https://github.com/StewAlexander-com/energy-density-challenge'
 def read(path): return (ROOT/path).read_text()
@@ -52,8 +56,12 @@ def markdown(text,origin,heading_offset=0):
 HEADER = """<a class="skip" href="#main">Skip to content</a><header class="site-header wrap"><a class="brand" href="index.html" aria-label="Energy Density Challenge home">Energy Density Challenge</a><nav aria-label="Main navigation"><a href="index.html">Question</a><a href="explore.html">Explore</a><a href="guide.html">Research guide</a><a href="contribute.html">Contribute</a></nav></header>"""
 def page(title,body,current=''):
  header=HEADER.replace(f'href="{current}"',f'href="{current}" aria-current="page"') if current else HEADER
+ url=seo.canonical(current)
+ share=f'''<details class="share-panel"><summary>Share this page</summary><div class="share-content"><label for="share-url">Page link</label><input id="share-url" type="url" value="{url}" readonly><div class="actions"><button type="button" id="copy-link" hidden>Copy link</button><button type="button" id="native-share" hidden>Share to an app</button></div><p id="share-status" role="status" aria-live="polite">Copy this link into any app or message.</p></div></details>'''
  return f'''<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="{e(title)} — The Energy Density Challenge. Investigate the problem before choosing a solution."><title>{e(title)} — Energy Density Challenge</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script></head><body>{header}<main id="main" class="wrap">{body}</main><footer class="site-footer wrap"><p>Energy Density Challenge · Open research</p><nav aria-label="Footer"><a href="review.html">Framing review</a><a href="guide.html#sources">Sources</a><a href="guide.html#safety">Safety</a><a href="{REPO}">GitHub</a><a href="AI_CHALLENGE.md">AI instructions (Markdown)</a></nav></footer></body></html>\n'''
+<html lang="en" prefix="og: https://ogp.me/ns#"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+{seo.head(current)}
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script></head><body>{header}<main id="main" class="wrap">{body}</main><footer class="site-footer wrap"><p>Energy Density Challenge · Open research</p><nav aria-label="Footer"><a href="review.html">Framing review</a><a href="guide.html#sources">Sources</a><a href="guide.html#safety">Safety</a><a href="{REPO}">GitHub</a><a href="resources.html">Share and reuse</a></nav>{share}</footer></body></html>\n'''
 def edge_html(edge,labels,opened=False):
  return f'<details class="model-edge"{" open" if opened else ""}><summary>{e(labels[edge["source"]])} → {e(labels[edge["target"]])}</summary><p><strong>Assumption:</strong> {e(edge["assumption"])}</p><p><strong>How to test it:</strong> {e(edge["discriminating_test"])}</p><p class="edge-meta">{e(edge["id"])} · Untested connection</p></details>'
 def render():
@@ -114,7 +122,29 @@ def render():
   title,rest=part.split('\n',1)
   ux_sections.append(f'<section class="review-step"><h2>{e(title)}</h2>{markdown(rest,"docs/ux-review.md")}</section>')
  ux_body='<div class="article-hero"><p class="eyebrow">Readability and interface review</p><h1>Twenty passes to a clearer site.</h1><p class="lede">A cumulative rubber-duck review of the question, navigation, wording, spacing and controls.</p><p class="source-note">September 10, 2026 · <a href="docs/ux-review.md">Review source (Markdown)</a></p></div><article class="document-content">'+''.join(ux_sections)+'</article>'
- return {**product,'review.html':page('Ten cumulative reviews',review_body),'guide.html':page('Research guide',guide_body,'guide.html'),'ux-review.html':page('Twenty-step UX review',ux_body)}
+ return {**product,'resources.html':page('Share and reuse',read('templates/resources.html'),'resources.html'),'sitemap.xml':seo.sitemap(),**discovery(),'review.html':page('Ten cumulative reviews',review_body,'review.html'),'guide.html':page('Research guide',guide_body,'guide.html'),'ux-review.html':page('Twenty-step UX review',ux_body,'ux-review.html')}
+def discovery():
+ paths=['README.md','AI_CHALLENGE.md','docs/ten-step-review.md','METHODOLOGY.md','SAFETY.md','CONTRIBUTING.md','docs/model-methodology.md','docs/research-protocol.md','docs/governance.md','challenge.json','research/index.json','research/models/EDC-M-0001.json','research/hypotheses/EDC-H-0001.json','research/experiments/EDC-E-0001.json','research/literature/sources.json']
+ intro='# Energy Density Challenge\n\n> First determine whether energy density is the right problem framing. Compare feasible alternatives for a specified useful service.\n\nThe systems model is proposed and uncalibrated. The framing hypothesis is unresolved and the first desk audit is proposed. No completed project study, independent replication or validated leverage ranking is recorded. Read current canonical records before relying on this summary. Background definitions are not project results.\n\n'
+ index=intro+'## Start here\n\n'
+ for path,label,note in [('AI_CHALLENGE.md','AI instructions','Reading order, evidence rules and first deliverable.'),('challenge.json','Challenge record','Mission, current phase and missing evidence.'),('review.html','Framing review','Ten cumulative passes, not independent peer review.'),('guide.html','Research guide','Method, safety, sources and review process.'),('research/index.json','Research index','Permanent identifiers and current statuses.'),('discovery.json','File manifest','Machine-readable paths and media types.'),('llms-full.txt','Combined reading pack','Generated from canonical documents and records.')]:
+  index+=f'- [{label}]({seo.SITE+path}): {note}\n'
+ index+='\n## Research records\n\n'
+ for path in paths[9:]:index+=f'- [{path}]({seo.SITE+path})\n'
+ index+='\n## Review and reuse\n\n'
+ for path,label in [('contribute.html','Draft a question'),('resources.html','Downloads and citation'),('CITATION.cff','Citation metadata'),('LICENSE','MIT license for original project content'),('docs/ux-review.md','Interface review')]:index+=f'- [{label}]({seo.SITE+path})\n'
+ full=intro+'This reading pack is a convenience copy. Each section names its canonical source. Linked third-party sources are not reproduced or independently validated by this bundle.\n\n'
+ for path in paths:
+  content=read(path)
+  if path.endswith('.md'):
+   # Preserve useful links when this file is fetched without a Markdown base URL.
+   from urllib.parse import urljoin
+   content=re.sub(r'\[([^\]]+)\]\(([^)]+)\)',lambda m:f'[{m[1]}]({urljoin(seo.SITE+path,m[2])})',content)
+  else:content='```json\n'+content.rstrip()+'\n```\n'
+  full+=f'---\n\nSource: {seo.SITE+path}\n\n'+content+'\n\n'
+ manifest={'name':seo.NAME,'url':seo.SITE,'repository':REPO,'license':seo.SITE+'LICENSE','purpose':'Problem-framing research; no project results are recorded at launch. Consult canonical records for current status.','pages':[{'url':seo.canonical(p),'title':v[0]} for p,v in seo.PAGES.items()],'files':[{'url':seo.SITE+p,'media_type':'application/json' if p.endswith('.json') else 'text/markdown'} for p in paths],'schemas':[seo.SITE+p.relative_to(ROOT).as_posix() for p in sorted((ROOT/'schemas').glob('*.json'))]}
+ return {'llms.txt':index,'llms-full.txt':full,'discovery.json':json.dumps(manifest,ensure_ascii=False,indent=2)+'\n'}
+
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--check',action='store_true');args=parser.parse_args()
  for name,content in render().items():
