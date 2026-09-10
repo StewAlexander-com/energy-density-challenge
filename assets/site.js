@@ -67,7 +67,7 @@ if (typeof document !== 'undefined') {
     saving.setAttribute('aria-valuetext',s+' percent less energy per task');growth.setAttribute('aria-valuetext',g+' percent more tasks');
     const formatter=new Intl.NumberFormat('en',{maximumFractionDigits:1});
     document.getElementById('energy-result').textContent=formatter.format(100*result.ratio)+'%';
-    document.getElementById('energy-message').textContent=Math.abs(result.ratio-1)<1e-9?'The saving is exactly offset by task growth.':result.ratio<1?'Operational energy decreases in this illustration.':'Operational energy increases despite the per-task saving.';
+    document.getElementById('energy-message').textContent=Math.abs(result.ratio-1)<1e-9?(s===0?'Operational energy is unchanged in this illustration.':'The saving is exactly offset by task growth.'):result.ratio<1?'Operational energy decreases in this illustration.':s===0?'Operational energy increases with task growth.':'Operational energy increases despite the per-task saving.';
     document.getElementById('energy-formula').textContent=(1-s/100).toFixed(2)+' × '+(1+g/100).toFixed(2)+' = '+result.ratio.toFixed(3);
     document.getElementById('break-even').textContent=s===0?'With no per-task saving, any task growth increases operational energy.':'A '+formatter.format(result.breakEvenGrowth)+'% increase in tasks erases a '+s+'% saving per task.';
   }
@@ -76,7 +76,7 @@ if (typeof document !== 'undefined') {
   let currentDraft=null;
   function invalidatePreview(){preview.hidden=true;currentDraft=null;}
   form.addEventListener('input',event=>{if(event.target.setCustomValidity)event.target.setCustomValidity('');invalidatePreview();});
-  evidence.addEventListener('change',()=>{const linked=evidence.value==='linked';document.getElementById('source-field').hidden=!linked;source.required=linked;source.setCustomValidity('');invalidatePreview();});
+  evidence.addEventListener('change',()=>{const linked=evidence.value==='linked';document.getElementById('source-field').hidden=!linked;source.required=linked;source.disabled=!linked;source.setCustomValidity('');invalidatePreview();});
   form.addEventListener('submit',event=>{
     event.preventDefault();
     for(const input of form.querySelectorAll('input[required]:not([type=checkbox]), textarea[required]')) {
