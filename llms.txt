@@ -28,5 +28,6 @@ The systems model is proposed and uncalibrated. The framing hypothesis is unreso
 - [Draft a question](https://stewalexander-com.github.io/energy-density-challenge/contribute.html)
 - [Downloads and citation](https://stewalexander-com.github.io/energy-density-challenge/resources.html)
 - [Citation metadata](https://stewalexander-com.github.io/energy-density-challenge/CITATION.cff)
+- [License scope and reuse](https://stewalexander-com.github.io/energy-density-challenge/license.html)
 - [MIT license for original project content](https://stewalexander-com.github.io/energy-density-challenge/LICENSE)
 - [Interface review](https://stewalexander-com.github.io/energy-density-challenge/docs/ux-review.md)

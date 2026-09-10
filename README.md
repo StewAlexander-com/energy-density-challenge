@@ -57,4 +57,16 @@ node --check assets/site.js
 
 Edit `templates/`, the Markdown documents and the JSON research records; regenerate the HTML pages. CI rejects stale generated pages, invalid records and broken local references before publishing.
 
-See [deployment instructions](docs/deployment.md). Original project content is MIT licensed; third-party sources and contributed data retain their own licenses. Attribution and provenance are required regardless of license.
+See [deployment instructions](docs/deployment.md).
+
+## License
+
+SPDX-License-Identifier: MIT
+
+Unless an individual file states otherwise, original project code, documentation, schemas, research records and website assets are made available under the [MIT License](LICENSE), to the extent the contributors hold rights in them.
+
+You may use, copy, modify, distribute, sublicense and sell copies, including for commercial purposes. Keep the copyright notice and MIT permission notice in all copies or substantial portions. The material is provided without warranty; the full [license text](LICENSE) governs.
+
+Third-party papers, figures, datasets and software retain their own licenses. Linking or citing them does not relicense them under MIT. Separately licensed contributions must identify their terms alongside the material.
+
+Scholarly citation and provenance are encouraged for reproducibility; they add no conditions to the MIT License. Contribution review, evidence and safety procedures govern participation in this project, not additional restrictions on MIT-licensed reuse.

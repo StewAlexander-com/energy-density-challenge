@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this project, cite the repository and the exact commit you reviewed. These are evolving project materials, not a peer-reviewed publication."
+message: "For scholarly attribution, please cite the repository and the exact commit you reviewed. This request adds no conditions to the MIT License. These are evolving project materials, not a peer-reviewed publication."
 title: "Energy Density Challenge"
 type: software
 authors:

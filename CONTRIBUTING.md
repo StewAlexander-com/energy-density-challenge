@@ -24,4 +24,8 @@ Maintainers check completeness and provenance. Domain reviewers assess the subst
 
 Canonical records stay in place. Preserve negative results, corrections, previous decisions and dissent. If a claim is withdrawn, superseded or falsified, explain why and retain its ID. The status index and record must agree.
 
-Original contributions are offered under the repository's MIT license unless a contribution explicitly states a separate compatible data license. You must have permission to share contributed material. Third-party papers, figures, datasets and software retain their own terms. See `docs/governance.md` and `SAFETY.md`.
+## Contribution licensing
+
+By submitting an original contribution for inclusion, you offer it under the [MIT License](LICENSE), unless you clearly identify a separate compatible license for contributed data. Identify any exception, its source, required notices and redistribution terms alongside the material for maintainer review. You retain ownership of your contribution; this does not assign copyright to the maintainer.
+
+You must have permission to share contributed material. Third-party papers, figures, datasets and software retain their own terms. Link material that cannot be redistributed. Provenance and review requirements are conditions for acceptance into this project, not extra conditions on reuse of MIT-licensed material. See `docs/governance.md` and `SAFETY.md`.

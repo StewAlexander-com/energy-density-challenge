@@ -265,3 +265,5 @@ code { overflow-wrap: anywhere; }
 .share-content p { font-size: 0.9375rem; }
 .social-preview { display: block; width: 100%; height: auto; margin-top: 20px; border: 1px solid var(--line, #ddd); }
 @media print { .share-panel { display: none; } }
+
+.license-copy { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; background: transparent; padding: 0; border: 0; }

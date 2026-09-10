@@ -69,7 +69,19 @@ node --check assets/site.js
 
 Edit `templates/`, the Markdown documents and the JSON research records; regenerate the HTML pages. CI rejects stale generated pages, invalid records and broken local references before publishing.
 
-See [deployment instructions](https://stewalexander-com.github.io/energy-density-challenge/docs/deployment.md). Original project content is MIT licensed; third-party sources and contributed data retain their own licenses. Attribution and provenance are required regardless of license.
+See [deployment instructions](https://stewalexander-com.github.io/energy-density-challenge/docs/deployment.md).
+
+## License
+
+SPDX-License-Identifier: MIT
+
+Unless an individual file states otherwise, original project code, documentation, schemas, research records and website assets are made available under the [MIT License](https://stewalexander-com.github.io/energy-density-challenge/LICENSE), to the extent the contributors hold rights in them.
+
+You may use, copy, modify, distribute, sublicense and sell copies, including for commercial purposes. Keep the copyright notice and MIT permission notice in all copies or substantial portions. The material is provided without warranty; the full [license text](https://stewalexander-com.github.io/energy-density-challenge/LICENSE) governs.
+
+Third-party papers, figures, datasets and software retain their own licenses. Linking or citing them does not relicense them under MIT. Separately licensed contributions must identify their terms alongside the material.
+
+Scholarly citation and provenance are encouraged for reproducibility; they add no conditions to the MIT License. Contribution review, evidence and safety procedures govern participation in this project, not additional restrictions on MIT-licensed reuse.
 
 
 ---
@@ -337,7 +349,11 @@ Maintainers check completeness and provenance. Domain reviewers assess the subst
 
 Canonical records stay in place. Preserve negative results, corrections, previous decisions and dissent. If a claim is withdrawn, superseded or falsified, explain why and retain its ID. The status index and record must agree.
 
-Original contributions are offered under the repository's MIT license unless a contribution explicitly states a separate compatible data license. You must have permission to share contributed material. Third-party papers, figures, datasets and software retain their own terms. See `docs/governance.md` and `SAFETY.md`.
+## Contribution licensing
+
+By submitting an original contribution for inclusion, you offer it under the [MIT License](https://stewalexander-com.github.io/energy-density-challenge/LICENSE), unless you clearly identify a separate compatible license for contributed data. Identify any exception, its source, required notices and redistribution terms alongside the material for maintainer review. You retain ownership of your contribution; this does not assign copyright to the maintainer.
+
+You must have permission to share contributed material. Third-party papers, figures, datasets and software retain their own terms. Link material that cannot be redistributed. Provenance and review requirements are conditions for acceptance into this project, not extra conditions on reuse of MIT-licensed material. See `docs/governance.md` and `SAFETY.md`.
 
 
 ---
@@ -422,7 +438,7 @@ Use a pull request for a correction; link the affected claim and evidence. Keep 
 
 ## Reuse and rights
 
-Original project code, prose and proposed model are MIT licensed. Incoming data needs a stated license, provenance and permission to redistribute; externally linked research retains its own terms. No institution endorses the project merely because its source is cited. Avoid personal data; remove accidentally committed secrets from history through an incident-specific process while retaining a non-sensitive correction record.
+Original project code, documentation, schemas, research records and website assets are offered under the [MIT License](https://stewalexander-com.github.io/energy-density-challenge/LICENSE), to the extent contributors hold rights in them and unless a file states otherwise. Preserve the copyright and permission notices when redistributing copies or substantial portions. Citation is encouraged for reproducibility and adds no license conditions. Incoming data needs a stated license, provenance and permission to redistribute; externally linked research retains its own terms. No institution endorses the project merely because its source is cited. Avoid personal data; remove accidentally committed secrets from history through an incident-specific process while retaining a non-sensitive correction record.
 
 
 ---
@@ -1199,5 +1215,32 @@ Source: https://stewalexander-com.github.io/energy-density-challenge/research/li
   ]
 }
 ```
+
+
+---
+
+Source: https://stewalexander-com.github.io/energy-density-challenge/LICENSE
+
+MIT License
+
+Copyright (c) 2026 The Energy Density Challenge contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 
