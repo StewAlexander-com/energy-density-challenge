@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the contribution guide
+    url: https://StewAlexander-com.github.io/energy-density-challenge/guide.html#contributing
+    about: Start with one claim, a source or a better framing.

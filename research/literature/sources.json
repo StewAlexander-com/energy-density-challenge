@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "id": "EDC-S-0001",
+      "title": "Hydrogen Storage — U.S. Department of Energy",
+      "url": "https://www.energy.gov/cmei/fuels/hydrogen-storage",
+      "accessed": "2026-09-10",
+      "verification": "full_page_reviewed",
+      "supports": "Mass, volume and storage-system constraints differ by application.",
+      "does_not_support": "A ranking of interventions or a universal energy-density leverage claim."
+    },
+    {
+      "id": "EDC-S-0002",
+      "title": "Entropy and Unavailable Energy — MIT thermodynamics notes",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+      "accessed": "2026-09-10",
+      "verification": "full_page_reviewed",
+      "supports": "Entropy generation and lost available work are physical quantities.",
+      "does_not_support": "Treating toxicity, money or social harm as entropy."
+    },
+    {
+      "id": "EDC-S-0003",
+      "title": "IPCC AR6 WGIII Chapter 5 — Demand, services and social aspects of mitigation",
+      "url": "https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-5/",
+      "accessed": "2026-09-10",
+      "verification": "lead_only_direct_fetch_403",
+      "supports": null,
+      "does_not_support": "No project claim relies on this unverified full text."
+    },
+    {
+      "id": "EDC-S-0004",
+      "title": "IPCC AR6 WGIII Chapter 6 — Energy systems",
+      "url": "https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-6/",
+      "accessed": "2026-09-10",
+      "verification": "lead_only_direct_fetch_403",
+      "supports": null,
+      "does_not_support": "No project claim relies on this unverified full text."
+    }
+  ]
+}

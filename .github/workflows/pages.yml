@@ -1,0 +1,60 @@
+name: Validate and publish Pages
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Install validation dependency
+        run: python -m pip install -r requirements-dev.txt
+      - name: Check canonical records and local links
+        run: python scripts/validate.py
+      - name: Verify generated pages are current
+        run: python scripts/build.py --check
+      - name: Check scientific status guardrails
+        run: python -m unittest discover -s tests
+      - name: Check calculator and contribution safeguards
+        run: node --test tests/site.test.js
+      - name: Check browser JavaScript syntax
+        run: node --check assets/site.js
+      - name: Stage the public files
+        run: python scripts/stage.py
+      - name: Validate staged links
+        run: python -c "from pathlib import Path; from scripts.validate import validate_links; validate_links(Path('_site').resolve())"
+      - name: Upload the validated site
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Publish the validated artifact
+        id: deployment
+        uses: actions/deploy-pages@v4

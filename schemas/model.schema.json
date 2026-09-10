@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Model",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "pattern": "^EDC-M-[0-9]{4}$",
+      "type": "string"
+    },
+    "status": {
+      "const": "proposed_uncalibrated"
+    },
+    "provenance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "definition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "definition",
+          "question"
+        ]
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^EDC-L-[0-9]{4}$"
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target": {
+            "type": "string",
+            "minLength": 1
+          },
+          "effect": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "const": "hypothesis"
+          },
+          "strength": {
+            "type": "null"
+          },
+          "assumption": {
+            "type": "string",
+            "minLength": 1
+          },
+          "discriminating_test": {
+            "type": "string",
+            "minLength": 1
+          },
+          "context_sources": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "effect_evidence": {
+            "type": "array",
+            "maxItems": 0
+          }
+        },
+        "required": [
+          "id",
+          "source",
+          "target",
+          "effect",
+          "status",
+          "strength",
+          "assumption",
+          "discriminating_test",
+          "context_sources",
+          "effect_evidence"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "status",
+    "provenance",
+    "purpose",
+    "limitations",
+    "nodes",
+    "edges"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "../../schemas/experiment.schema.json",
+  "schema_version": "1.0.0",
+  "id": "EDC-E-0001",
+  "hypothesis_id": "EDC-H-0001",
+  "title": "First assignment: a bounded framing audit",
+  "status": "proposed",
+  "evidence_kind": "analysis_protocol",
+  "hypothesis": "Does density address the binding constraint better than feasible alternatives in one specified service?",
+  "physical_mechanism": "More usable stored energy for a fixed system mass or volume can matter only where that constraint limits the service.",
+  "required_assumptions": [
+    "The case, service quality, comparators and constraints are fixed before evaluation.",
+    "Evidence is licensed, traceable and comparable."
+  ],
+  "predicted_measurable_result": null,
+  "cheapest_discriminating_experiment": [
+    "Select one useful service with a relevant practitioner; record beneficiary and unmet need.",
+    "Register functional unit, boundary, geography, lifetime, baseline, alternatives, minimum improvement and hard constraints before reviewing comparative outcomes.",
+    "Collect source-level evidence and prior art; record missing data and failed approaches.",
+    "Compare feasible interventions at matched service quality and reliability; propagate uncertainty and test sensitivity.",
+    "Ask an independent reviewer to reproduce calculations and challenge excluded boundaries.",
+    "Publish evidence and a retain, narrow, replace or unresolved decision; revise the next question."
+  ],
+  "required_equipment": [
+    "computer",
+    "access to source literature and datasets"
+  ],
+  "expected_uncertainty": "Not yet quantified; register measurement ranges, source quality, dependence and model sensitivity before comparison.",
+  "safety_considerations": "Desk analysis only. This protocol authorizes no physical experiment.",
+  "falsification_result": "A feasible alternative robustly dominates density, density does not address the binding constraint, or it fails a preregistered threshold or safety/environmental constraint.",
+  "replication_procedure": "Freeze source snapshots or checksums, licensed data, code, units and assumptions; a separate reviewer reproduces the comparison and records disagreement and source overlap.",
+  "preregistration": {
+    "registered_at": null,
+    "service": null,
+    "functional_unit": null,
+    "boundary": null,
+    "baseline": null,
+    "thresholds": null,
+    "missing_reason": "Protocol is proposed, not ready to execute or an experimental result."
+  },
+  "last_updated": "2026-09-10"
+}

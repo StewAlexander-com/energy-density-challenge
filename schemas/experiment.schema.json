@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Experiment",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^EDC-E-[0-9]{4}$"
+    },
+    "hypothesis_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "registered",
+        "completed",
+        "withdrawn"
+      ]
+    },
+    "evidence_kind": {
+      "enum": [
+        "analysis_protocol",
+        "physical_experiment_protocol",
+        "simulation_protocol"
+      ]
+    },
+    "hypothesis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "physical_mechanism": {
+      "type": "string",
+      "minLength": 1
+    },
+    "required_assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "predicted_measurable_result": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cheapest_discriminating_experiment": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required_equipment": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "expected_uncertainty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "safety_considerations": {
+      "type": "string",
+      "minLength": 1
+    },
+    "falsification_result": {
+      "type": "string",
+      "minLength": 1
+    },
+    "replication_procedure": {
+      "type": "string",
+      "minLength": 1
+    },
+    "preregistration": {
+      "type": "object",
+      "properties": {
+        "registered_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "functional_unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "boundary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "baseline": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thresholds": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "registered_at",
+        "service",
+        "functional_unit",
+        "boundary",
+        "baseline",
+        "thresholds",
+        "missing_reason"
+      ]
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "hypothesis_id",
+    "title",
+    "status",
+    "evidence_kind",
+    "hypothesis",
+    "physical_mechanism",
+    "required_assumptions",
+    "predicted_measurable_result",
+    "cheapest_discriminating_experiment",
+    "required_equipment",
+    "expected_uncertainty",
+    "safety_considerations",
+    "falsification_result",
+    "replication_procedure",
+    "preregistration",
+    "last_updated"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Draft",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "kind": {
+      "const": "framing_draft"
+    },
+    "status": {
+      "const": "unreviewed"
+    },
+    "service": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context": {
+      "type": "string",
+      "minLength": 1
+    },
+    "constraint": {
+      "type": "string",
+      "minLength": 1
+    },
+    "baseline": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alternative": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_status": {
+      "enum": [
+        "linked",
+        "not_yet_available"
+      ]
+    },
+    "source": {
+      "type": "string"
+    },
+    "falsifier": {
+      "type": "string",
+      "minLength": 1
+    },
+    "safety_acknowledged": {
+      "const": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "status",
+    "service",
+    "context",
+    "constraint",
+    "baseline",
+    "alternative",
+    "evidence_status",
+    "source",
+    "falsifier",
+    "safety_acknowledged",
+    "created_at"
+  ]
+}

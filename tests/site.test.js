@@ -1,0 +1,16 @@
+'use strict';
+const {test}=require('node:test'),assert=require('node:assert/strict');
+const {calculateEnergy,makeDraft,formatDraft}=require('../assets/site.js');
+const valid={service:'Deliver a load',context:'A specified route',constraint:'Storage mass',baseline:'Existing vehicle',alternative:'Route efficiency',evidence_status:'not_yet_available',source:'',falsifier:'A matched comparator delivers more payload.',safety_acknowledged:true};
+test('20% savings and 25% growth cancel',()=>assert.equal(calculateEnergy(20,25).ratio,1));
+test('efficiency alone lowers operational energy',()=>assert.equal(calculateEnergy(20,0).ratio,.8));
+test('growth can exceed savings',()=>assert.ok(calculateEnergy(20,100).ratio>1));
+test('no saving and no growth retain baseline',()=>assert.equal(calculateEnergy(0,0).ratio,1));
+test('calculator rejects NaN and invalid domains',()=>{for(const args of [[NaN,1],[-1,5],[100,1],[20,-1],[20,201]])assert.throws(()=>calculateEnergy(...args),RangeError);});
+test('unknown evidence remains a draft',()=>{const d=makeDraft(valid);assert.equal(d.status,'unreviewed');assert.equal(d.evidence_status,'not_yet_available');assert.equal(d.source,'');assert.equal(d.id,undefined);});
+test('blank text cannot pass completeness check',()=>assert.throws(()=>makeDraft({...valid,baseline:'  '})));
+test('safety acknowledgement cannot be omitted',()=>assert.throws(()=>makeDraft({...valid,safety_acknowledged:false})));
+test('unsafe URL schemes and credential URLs are rejected',()=>{for(const source of ['javascript:alert(1)','file:///tmp/a','https://user:pass@example.com/'])assert.throws(()=>makeDraft({...valid,evidence_status:'linked',source}));});
+test('source selection requires a source',()=>assert.throws(()=>makeDraft({...valid,evidence_status:'linked'})));
+test('missing evidence does not leak a hidden previous URL',()=>assert.equal(makeDraft({...valid,source:'https://example.com/old'}).source,''));
+test('text is preserved as data and uncertainty is visible',()=>{const d=makeDraft({...valid,service:'<script>text</script>'});assert.equal(d.service,'<script>text</script>');assert.match(formatDraft(d),/not a finding/);});

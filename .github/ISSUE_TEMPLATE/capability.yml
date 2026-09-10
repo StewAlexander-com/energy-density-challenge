@@ -1,0 +1,35 @@
+name: Offer expertise, compute or access
+description: Describe a capability without transferring resources, funds or credentials.
+title: 'Capability: '
+body:
+  - type: markdown
+    attributes:
+      value: 'Donate Intelligence is a future concept. No compute runner, payment service or autonomous lab is active here.'
+  - type: textarea
+    id: offer
+    attributes:
+      label: What could you contribute?
+      description: Expertise, criticism, replication, compute, inference, simulations, manufacturing, funding or laboratory access.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope, conditions and limits
+      description: Describe availability, ownership, permissions and costs without sharing credentials or private information.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Which question would it help investigate?
+      description: Prefer a bounded test that could change the problem framing.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Execution boundary
+      options:
+        - label: This is a capability description only; hazardous physical work requires qualified human professional review and oversight.
+          required: true

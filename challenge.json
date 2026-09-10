@@ -1,0 +1,307 @@
+{
+  "$schema": "schemas/challenge.schema.json",
+  "schema_version": "1.0.0",
+  "challenge": "The Energy Density Challenge",
+  "tagline": "A standing challenge to human and artificial intelligence",
+  "phase": "problem_framing",
+  "hypothesis": "In a specified service and boundary, improving usable system energy density may outperform feasible alternatives on a declared binding constraint without violating agreed safeguards. This has not been established.",
+  "first_assignment": "Determine whether energy density is the right problem framing before prioritizing solutions.",
+  "core_question": "Can sufficiently capable human-AI and AI-AI research systems discover interventions that substantially increase useful energy availability per constrained resource while decreasing total system-level environmental and economic costs?",
+  "harder_question": "Or are we merely moving energy, entropy, cost, risk, materials, or environmental damage somewhere less visible?",
+  "objectives": [
+    "Identify a service deficit and the binding constraint.",
+    "Compare density with the baseline and feasible alternatives.",
+    "Report service quality, total burdens and per-service metrics.",
+    "Retain, narrow, replace or leave the framing unresolved based on evidence."
+  ],
+  "constraints": [
+    "No arbitrary combined score.",
+    "No causal leverage claim from connectivity.",
+    "No unknown-to-zero conversion.",
+    "No global inference from one application.",
+    "No evidence promotion from AI agreement.",
+    "No autonomous hazardous physical experimentation."
+  ],
+  "metrics": [
+    {
+      "id": "specific_energy",
+      "label": "Usable energy per system mass",
+      "unit": "Wh/kg",
+      "direction": "maximize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "volumetric_energy",
+      "label": "Usable energy per system volume",
+      "unit": "Wh/L",
+      "direction": "maximize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "power",
+      "label": "Delivered power at required duration",
+      "unit": "kW",
+      "direction": "contextual",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "work_efficiency",
+      "label": "Useful work per input energy",
+      "unit": "J/J",
+      "direction": "maximize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "compute_efficiency",
+      "label": "Quality-qualified tasks per energy",
+      "unit": "tasks/kWh",
+      "direction": "maximize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "lifecycle_cost",
+      "label": "Lifecycle cost per functional unit",
+      "unit": "declared currency, price year / functional unit",
+      "direction": "minimize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "capital_cost",
+      "label": "Capital cost",
+      "unit": "declared currency and price year",
+      "direction": "minimize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "operating_cost",
+      "label": "Operating cost",
+      "unit": "declared currency and price year / year",
+      "direction": "minimize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "material_abundance",
+      "label": "Material availability",
+      "unit": "material-specific supply measure",
+      "direction": "contextual",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "mineral_dependency",
+      "label": "Critical mineral requirement",
+      "unit": "kg / functional unit",
+      "direction": "minimize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "manufacturability",
+      "label": "Manufacturing yield and process readiness",
+      "unit": "declared yield and readiness basis",
+      "direction": "contextual",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "scalability",
+      "label": "Achievable annual deployment",
+      "unit": "functional units / year",
+      "direction": "maximize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "land",
+      "label": "Land occupation",
+      "unit": "m²·year / functional unit",
+      "direction": "minimize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "water",
+      "label": "Water consumption by location",
+      "unit": "m³ / functional unit",
+      "direction": "minimize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "waste_heat",
+      "label": "Heat rejection at stated temperature",
+      "unit": "kWh thermal / functional unit",
+      "direction": "contextual",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "carbon_intensity",
+      "label": "Operational emissions intensity",
+      "unit": "kg CO2e / functional unit",
+      "direction": "minimize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "lifecycle_emissions",
+      "label": "Lifecycle greenhouse gas emissions",
+      "unit": "kg CO2e / functional unit",
+      "direction": "minimize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "toxicity",
+      "label": "Hazard and exposure",
+      "unit": "declared assessment method",
+      "direction": "minimize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "recyclability",
+      "label": "Recovered material with processing burdens",
+      "unit": "percent by mass plus process inventory",
+      "direction": "contextual",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "reliability",
+      "label": "Service availability and failure rates",
+      "unit": "percent availability; failures / service-hour",
+      "direction": "contextual",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "resilience",
+      "label": "Performance under stated disruption",
+      "unit": "service retained; recovery hours",
+      "direction": "contextual",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "safety",
+      "label": "Hazards, exposure and residual risk",
+      "unit": "qualified assessment; not a universal score",
+      "direction": "contextual",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "concentration",
+      "label": "Supply concentration",
+      "unit": "supplier/country shares and method",
+      "direction": "contextual",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "infrastructure",
+      "label": "Additional infrastructure",
+      "unit": "physical inventory plus costs",
+      "direction": "contextual",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    },
+    {
+      "id": "deployment_time",
+      "label": "Time until service delivered",
+      "unit": "years from decision",
+      "direction": "minimize",
+      "boundary_required": true,
+      "value": null,
+      "missing_reason": "No comparable measured project data yet."
+    }
+  ],
+  "research_domains": [
+    "electrochemistry",
+    "battery chemistry",
+    "nuclear fission",
+    "fusion",
+    "photovoltaics",
+    "thermoelectrics",
+    "photonics",
+    "superconductivity",
+    "power electronics",
+    "hydrogen and chemical carriers",
+    "synthetic fuels",
+    "grid architecture",
+    "thermal storage",
+    "waste-heat recovery",
+    "materials science",
+    "distributed generation",
+    "computation per joule",
+    "low-power AI hardware",
+    "optical computing",
+    "service and demand design",
+    "maintenance and infrastructure",
+    "other approaches consistent with known physics"
+  ],
+  "unresolved_questions": [
+    "Which service and beneficiary should the first framing audit address?",
+    "Which constraint actually binds in that setting?",
+    "What existing option is the strongest comparator?",
+    "Which thresholds and acceptable tradeoffs do affected stakeholders endorse?",
+    "What evidence would justify retaining, narrowing or replacing the name?"
+  ],
+  "known_failures": [],
+  "evidence": [],
+  "confidence": {
+    "value": null,
+    "basis": "No bounded framing study has been completed.",
+    "history": [
+      {
+        "date": "2026-09-10",
+        "status": "unresolved",
+        "reason": "Launch state; original systems model was not supplied."
+      }
+    ]
+  },
+  "experiments_needed": [
+    "EDC-E-0001"
+  ],
+  "safety_requirements": [
+    "Human professional review and oversight for any hazardous physical work.",
+    "Static site only: no agent execution, compute dispatch, device control or automatic experiments."
+  ],
+  "model": "research/models/EDC-M-0001.json",
+  "research_index": "research/index.json",
+  "review": "docs/ten-step-review.md",
+  "last_updated": "2026-09-10"
+}

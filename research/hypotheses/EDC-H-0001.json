@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schemas/hypothesis.schema.json",
+  "schema_version": "1.0.0",
+  "id": "EDC-H-0001",
+  "title": "Does density deserve priority in the first selected service?",
+  "status": "unresolved",
+  "evidence_kind": "hypothesis",
+  "statement": "In a preregistered service, an intervention increasing usable installed-system energy density improves the binding constraint more than the best feasible non-density alternative without violating agreed safeguards.",
+  "scope": {
+    "service": null,
+    "beneficiary": null,
+    "functional_unit": null,
+    "geography": null,
+    "time_horizon": null,
+    "system_boundary": null,
+    "missing_reason": "The first framing audit must select and register a bounded case."
+  },
+  "baseline": null,
+  "alternatives": [
+    "best feasible existing option",
+    "efficiency or service redesign",
+    "infrastructure or operational improvement"
+  ],
+  "mechanism": "A storage mass or volume constraint may limit the delivered service. Whether it binds is to be investigated.",
+  "assumptions": [
+    "The selected service can be compared at fixed quality and reliability.",
+    "Comparable lifecycle data and feasible alternatives can be obtained."
+  ],
+  "prediction": null,
+  "thresholds": null,
+  "falsifier": "Within the registered scope, density fails the minimum improvement threshold, violates a hard constraint, or is robustly dominated by a feasible comparator. Missing or incomparable evidence leaves the claim unresolved.",
+  "evidence": [],
+  "experiment_ids": [
+    "EDC-E-0001"
+  ],
+  "result_ids": [],
+  "replications": [],
+  "confidence": {
+    "value": null,
+    "basis": "No study completed; no calibrated probability."
+  },
+  "confidence_history": [
+    {
+      "date": "2026-09-10",
+      "status": "unresolved",
+      "reason": "Service, thresholds and comparisons remain unregistered."
+    }
+  ],
+  "signal": [],
+  "noise": [
+    "measurement error",
+    "different duty cycles",
+    "model uncertainty",
+    "boundary mismatch"
+  ],
+  "bias": [
+    "title anchoring",
+    "publication bias",
+    "shared AI sources",
+    "selection of favorable applications"
+  ],
+  "unknowns": [
+    "binding constraint",
+    "comparators",
+    "thresholds",
+    "lifecycle data"
+  ],
+  "unknown_unknown_exposure": "Unrepresented affected groups, excluded supply chains and changes in service demand.",
+  "safety": "Desk research only in the initial audit. Any hazardous physical work requires qualified professional review.",
+  "last_updated": "2026-09-10"
+}

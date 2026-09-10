@@ -1,0 +1,237 @@
+{
+  "$schema": "../../schemas/model.schema.json",
+  "schema_version": "1.0.0",
+  "id": "EDC-M-0001",
+  "title": "Proposed service-constraint model",
+  "status": "proposed_uncalibrated",
+  "created": "2026-09-10",
+  "provenance": "New qualitative model created at the user's request after the original model was not supplied. Not a reconstruction or an empirical result.",
+  "purpose": "Generate bounded comparisons and questions about displaced burdens.",
+  "limitations": [
+    "No fitted weights, causal identification, intervention estimates or centrality ranking.",
+    "Edge directions are conditional hypotheses; feedback timing is unspecified.",
+    "Context sources do not validate an edge or quantify its effect.",
+    "The diagram shows candidate relationships, not completeness or global importance."
+  ],
+  "nodes": [
+    {
+      "id": "density",
+      "label": "System energy density",
+      "definition": "Usable energy per mass or volume of the installed storage system.",
+      "question": "Does storage mass or volume bind in this service?"
+    },
+    {
+      "id": "efficiency",
+      "label": "Useful service per joule",
+      "definition": "A service of declared quality from a unit of input energy.",
+      "question": "Could efficiency or service redesign remove more of the constraint?"
+    },
+    {
+      "id": "delivery",
+      "label": "Delivery & infrastructure",
+      "definition": "Generation, networks, charging, storage and maintenance.",
+      "question": "Is availability constrained by delivery rather than storage?"
+    },
+    {
+      "id": "cost",
+      "label": "Cost & access",
+      "definition": "Who can afford and obtain the required service.",
+      "question": "Which cost or access barrier determines uptake?"
+    },
+    {
+      "id": "service",
+      "label": "Useful services",
+      "definition": "Mobility, heat, food production, industrial output and computation.",
+      "question": "Which service, beneficiary, quality and duration are held fixed?"
+    },
+    {
+      "id": "compute",
+      "label": "Scientific computation",
+      "definition": "More task-qualified computational work for research.",
+      "question": "Does extra compute produce reproducible useful research?"
+    },
+    {
+      "id": "demand",
+      "label": "Aggregate demand",
+      "definition": "The total amount of service consumed, not just intensity.",
+      "question": "How much growth is caused by lower cost versus other drivers?"
+    },
+    {
+      "id": "burdens",
+      "label": "Lifecycle burdens",
+      "definition": "Materials, water, land, emissions, waste heat and safety.",
+      "question": "Which burdens rise, where, when and for whom?"
+    }
+  ],
+  "edges": [
+    {
+      "id": "EDC-L-0001",
+      "source": "density",
+      "target": "service",
+      "effect": "positive",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "Mass or volume is a binding constraint; installed-system overhead does not erase the gain.",
+      "discriminating_test": "Compare delivered service at fixed system mass or volume and duty cycle.",
+      "context_sources": [
+        "EDC-S-0001"
+      ],
+      "effect_evidence": []
+    },
+    {
+      "id": "EDC-L-0002",
+      "source": "density",
+      "target": "cost",
+      "effect": "ambiguous",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "Changes in materials, manufacturing and lifetime can outweigh storage gains.",
+      "discriminating_test": "Compare full lifecycle costs at identical service and reliability.",
+      "context_sources": [],
+      "effect_evidence": []
+    },
+    {
+      "id": "EDC-L-0003",
+      "source": "density",
+      "target": "burdens",
+      "effect": "ambiguous",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "A denser chemistry or carrier changes extraction, containment and end-of-life burdens.",
+      "discriminating_test": "Publish a comparative lifecycle inventory with material quantities and uncertainty.",
+      "context_sources": [],
+      "effect_evidence": []
+    },
+    {
+      "id": "EDC-L-0004",
+      "source": "efficiency",
+      "target": "cost",
+      "effect": "conditional_negative",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "Operating energy costs matter and savings are not fully offset by capital or maintenance.",
+      "discriminating_test": "Compare total costs using a declared duty cycle and lifetime.",
+      "context_sources": [],
+      "effect_evidence": []
+    },
+    {
+      "id": "EDC-L-0005",
+      "source": "efficiency",
+      "target": "burdens",
+      "effect": "conditional_negative",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "The same service is delivered and manufacturing overhead does not erase operating savings.",
+      "discriminating_test": "Compare whole-system totals across lifecycle and demand scenarios.",
+      "context_sources": [],
+      "effect_evidence": []
+    },
+    {
+      "id": "EDC-L-0006",
+      "source": "delivery",
+      "target": "service",
+      "effect": "positive",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "Delivery or availability constrains the service.",
+      "discriminating_test": "Compare outage, queue or curtailment data before and after an intervention.",
+      "context_sources": [],
+      "effect_evidence": []
+    },
+    {
+      "id": "EDC-L-0007",
+      "source": "delivery",
+      "target": "burdens",
+      "effect": "ambiguous",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "Infrastructure adds embodied impacts but can reduce other losses.",
+      "discriminating_test": "Include construction, replacement and displaced equipment in the inventory.",
+      "context_sources": [],
+      "effect_evidence": []
+    },
+    {
+      "id": "EDC-L-0008",
+      "source": "cost",
+      "target": "demand",
+      "effect": "conditional_negative",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "The cost variable is service price and demand responds to it.",
+      "discriminating_test": "Estimate a price response using a credible counterfactual; separate unrelated growth.",
+      "context_sources": [],
+      "effect_evidence": []
+    },
+    {
+      "id": "EDC-L-0009",
+      "source": "demand",
+      "target": "burdens",
+      "effect": "conditional_positive",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "Marginal service has nonzero resource requirements.",
+      "discriminating_test": "Measure aggregate consumption and marginal supply effects.",
+      "context_sources": [],
+      "effect_evidence": []
+    },
+    {
+      "id": "EDC-L-0010",
+      "source": "cost",
+      "target": "compute",
+      "effect": "conditional_negative",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "Energy costs materially constrain research compute and capacity can expand.",
+      "discriminating_test": "Compare energy share of compute cost and actual capacity constraints.",
+      "context_sources": [],
+      "effect_evidence": []
+    },
+    {
+      "id": "EDC-L-0011",
+      "source": "compute",
+      "target": "efficiency",
+      "effect": "ambiguous",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "Additional research compute may produce valid, deployable improvements.",
+      "discriminating_test": "Compare independently validated research yield per total resource cost.",
+      "context_sources": [],
+      "effect_evidence": []
+    },
+    {
+      "id": "EDC-L-0012",
+      "source": "compute",
+      "target": "density",
+      "effect": "ambiguous",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "Extra search produces replicable, manufacturable storage improvements.",
+      "discriminating_test": "Audit discoveries against prior art and independent physical tests.",
+      "context_sources": [],
+      "effect_evidence": []
+    },
+    {
+      "id": "EDC-L-0013",
+      "source": "service",
+      "target": "demand",
+      "effect": "ambiguous",
+      "status": "hypothesis",
+      "strength": null,
+      "assumption": "Changes in service quality, access and substitution alter total use.",
+      "discriminating_test": "Track uptake, displaced services, quality and absolute consumption.",
+      "context_sources": [],
+      "effect_evidence": []
+    }
+  ],
+  "sector_questions": {
+    "climate": "Do lifecycle emissions fall in total and per service?",
+    "transportation": "Does storage mass, volume, power, refuelling, infrastructure or demand bind?",
+    "agriculture": "Does useful energy constrain food output after water, land and nutrients?",
+    "computation": "Does energy constrain quality-qualified tasks after hardware and latency?",
+    "industrial production": "What temperature, uptime and process change is required?",
+    "finance": "Do capital access or financing terms dominate lifecycle economics?",
+    "supply chains": "Which materials, manufacturers and transport routes constrain scale?",
+    "geopolitics": "Does supplier concentration or dependence increase?",
+    "infrastructure": "What must be built, maintained and replaced, and by when?"
+  }
+}

@@ -1,0 +1,42 @@
+[
+  [
+    "Explorer",
+    "Find competing explanations and neglected interventions."
+  ],
+  [
+    "Engineer",
+    "Check manufacture, operation, maintenance, deployment and scale."
+  ],
+  [
+    "Physicist",
+    "Check mechanisms, units, conservation laws and physical limits."
+  ],
+  [
+    "Experimentalist",
+    "Design the cheapest discriminating test."
+  ],
+  [
+    "Systems analyst",
+    "Track the service and downstream system changes."
+  ],
+  [
+    "Environmental auditor",
+    "Find lifecycle burdens and affected communities."
+  ],
+  [
+    "Economist",
+    "Compare capital, operating costs, access and deployment timing."
+  ],
+  [
+    "Red team",
+    "Challenge physics, assumptions, metrics, safety, demand and scale."
+  ],
+  [
+    "Prior-art investigator",
+    "Find patents, papers, abandoned programs and negative results."
+  ],
+  [
+    "Synthesis system",
+    "Preserve disagreement and identify the next decision."
+  ]
+]

@@ -1,0 +1,299 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hypothesis",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^EDC-H-[0-9]{4}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "unresolved",
+        "plausible_experiment_required",
+        "falsified",
+        "supported_within_tested_conditions"
+      ]
+    },
+    "evidence_kind": {
+      "const": "hypothesis"
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "object",
+      "properties": {
+        "service": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "beneficiary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "functional_unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geography": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "time_horizon": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "system_boundary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "service",
+        "beneficiary",
+        "functional_unit",
+        "geography",
+        "time_horizon",
+        "system_boundary",
+        "missing_reason"
+      ]
+    },
+    "baseline": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "mechanism": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "prediction": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "thresholds": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "falsifier": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "experiment_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "result_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "replications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "type": "string",
+            "minLength": 1
+          },
+          "result_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "conditions": {
+            "type": "string",
+            "minLength": 1
+          },
+          "independence_basis": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "group",
+          "result_id",
+          "conditions",
+          "independence_basis"
+        ]
+      }
+    },
+    "confidence": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "value",
+        "basis"
+      ]
+    },
+    "confidence_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "status": {
+            "enum": [
+              "unresolved",
+              "plausible_experiment_required",
+              "falsified",
+              "supported_within_tested_conditions"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "date",
+          "status",
+          "reason"
+        ]
+      }
+    },
+    "signal": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "noise": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "bias": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "unknown_unknown_exposure": {
+      "type": "string",
+      "minLength": 1
+    },
+    "safety": {
+      "type": "string",
+      "minLength": 1
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "status",
+    "evidence_kind",
+    "statement",
+    "scope",
+    "baseline",
+    "alternatives",
+    "mechanism",
+    "assumptions",
+    "prediction",
+    "thresholds",
+    "falsifier",
+    "evidence",
+    "experiment_ids",
+    "result_ids",
+    "replications",
+    "confidence",
+    "confidence_history",
+    "signal",
+    "noise",
+    "bias",
+    "unknowns",
+    "unknown_unknown_exposure",
+    "safety",
+    "last_updated"
+  ]
+}

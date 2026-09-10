@@ -1,0 +1,47 @@
+name: Evidence, criticism or a failed approach
+description: Share one source or observation that could change a claim.
+title: 'Evidence: '
+body:
+  - type: markdown
+    attributes:
+      value: 'An issue is an unreviewed contribution, not an accepted scientific finding. Missing data should be stated explicitly.'
+  - type: input
+    id: claim
+    attributes:
+      label: Which claim or question does this address?
+      description: Give an EDC identifier if one exists, or describe the claim.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source and exact location
+      description: Link the paper, dataset, prior art or negative result; identify the passage, figure or measurement. State if it is not yet verified.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What does this change?
+      description: Explain what it supports or contradicts, and distinguish evidence from your interpretation.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Conditions, uncertainty and missing information
+      description: Include service, units, boundaries, limitations and what would change your interpretation.
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Contribution provenance
+      description: State relevant AI assistance, source overlap, conflicts and redistribution permissions if attaching data. No secrets or personal data.
+  - type: checkboxes
+    id: review
+    attributes:
+      label: Review boundary
+      options:
+        - label: This contribution does not authorize hazardous physical work or autonomous execution.
+          required: true

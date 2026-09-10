@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "hypotheses": [
+    {
+      "id": "EDC-H-0001",
+      "path": "research/hypotheses/EDC-H-0001.json",
+      "status": "unresolved"
+    }
+  ],
+  "experiments": [
+    {
+      "id": "EDC-E-0001",
+      "path": "research/experiments/EDC-E-0001.json",
+      "status": "proposed"
+    }
+  ],
+  "results": [],
+  "falsified": [],
+  "unresolved": [
+    "EDC-H-0001"
+  ],
+  "models": [
+    {
+      "id": "EDC-M-0001",
+      "path": "research/models/EDC-M-0001.json",
+      "status": "proposed_uncalibrated"
+    }
+  ],
+  "last_updated": "2026-09-10"
+}
