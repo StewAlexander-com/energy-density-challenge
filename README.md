@@ -24,6 +24,10 @@ Energy density is one candidate. It must be compared with efficiency, service re
 
 The original implementation is preserved as [ASTRA-STATE-0001](https://github.com/StewAlexander-com/energy-density-challenge/tree/3b55fbab2ea9b94e0f78e9d458d5f6144cbed026). [State manifests](research/states/index.json) record file digests, Merkle roots and parent hashes; integrity does not establish scientific truth. See [verification instructions](docs/research-states.md).
 
+[![From a Better Question to Better Answers: question the energy-density premise, propose a research protocol, and compare it with a separately developed perspective through discriminating tests.](assets/idea-map.jpeg)](assets/idea-map.jpeg)
+
+*Conceptual roadmap. The Astra states are archived here; the Fable branch and its independence are not yet documented in this repository. The comparisons and experiments shown remain proposed.* [View the map at full size](assets/idea-map.jpeg).
+
 ## What exists
 
 - One proposed, uncalibrated [systems model](research/models/EDC-M-0001.json), created because the original model was not supplied. Every edge is an untested conditional hypothesis.
