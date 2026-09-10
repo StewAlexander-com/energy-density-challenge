@@ -68,22 +68,28 @@ def validate_index(index,records):
   require(set(index[status])==expected,f'{status} index disagrees with canonical records.')
 
 class Page(HTMLParser):
- def __init__(self):super().__init__();self.ids=set();self.references=[];self.controls=[];self.labels=set();self.lang=None;self.main=False
+ def __init__(self):super().__init__();self.ids=set();self.references=[];self.controls=[];self.labels=set();self.lang=None;self.main=False;self.headings=[];self.in_heading=False
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
   if 'id' in a:
    require(a['id'] not in self.ids,'Duplicate HTML id: '+a['id']);self.ids.add(a['id'])
+  if tag in ['h1','h2','h3','h4','h5','h6']:self.headings.append(int(tag[1]));self.in_heading=True
+  if tag=='br' and self.in_heading:raise ValueError('Use natural heading wrapping; hidden line breaks can join words.')
   if tag=='html':self.lang=a.get('lang')
   if tag=='main':self.main=True
   if tag=='label' and 'for' in a:self.labels.add(a['for'])
   if tag in ['input','select','textarea'] and a.get('type')!='checkbox':self.controls.append(a.get('id'))
   for key in ['href','src']:
    if key in a:self.references.append(a[key])
+ def handle_endtag(self,tag):
+  if tag in ['h1','h2','h3','h4','h5','h6']:self.in_heading=False
 def validate_links(root):
  pages={}
  for path in root.glob('*.html'):
   page=Page();page.feed(path.read_text());pages[path]=page
   require(page.lang=='en' and page.main,f'{path.name} needs language and main landmark.')
+  require(page.headings.count(1)==1,f'{path.name} needs exactly one main heading.')
+  require(all(b<=a+1 for a,b in zip(page.headings,page.headings[1:])),f'{path.name} skips a heading level.')
   require(all(c in page.labels for c in page.controls),f'{path.name} has an unlabelled input.')
  for path,page in pages.items():
   for ref in page.references:

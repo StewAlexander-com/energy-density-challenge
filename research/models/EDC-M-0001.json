@@ -16,51 +16,51 @@
   "nodes": [
     {
       "id": "density",
-      "label": "System energy density",
+      "label": "Storage density",
       "definition": "Usable energy per mass or volume of the installed storage system.",
-      "question": "Does storage mass or volume bind in this service?"
+      "question": "Does the storage system’s weight or size limit the outcome?"
     },
     {
       "id": "efficiency",
-      "label": "Useful service per joule",
+      "label": "Energy efficiency",
       "definition": "A service of declared quality from a unit of input energy.",
-      "question": "Could efficiency or service redesign remove more of the constraint?"
+      "question": "Could better efficiency or a different way of meeting the need help more?"
     },
     {
       "id": "delivery",
-      "label": "Delivery & infrastructure",
+      "label": "Infrastructure",
       "definition": "Generation, networks, charging, storage and maintenance.",
-      "question": "Is availability constrained by delivery rather than storage?"
+      "question": "Is delivery or reliability a bigger limit than storage?"
     },
     {
       "id": "cost",
-      "label": "Cost & access",
+      "label": "Cost and access",
       "definition": "Who can afford and obtain the required service.",
-      "question": "Which cost or access barrier determines uptake?"
+      "question": "What prevents people from affording or obtaining the service?"
     },
     {
       "id": "service",
-      "label": "Useful services",
+      "label": "Useful outcomes",
       "definition": "Mobility, heat, food production, industrial output and computation.",
-      "question": "Which service, beneficiary, quality and duration are held fixed?"
+      "question": "What must be delivered, for whom, and to what standard?"
     },
     {
       "id": "compute",
-      "label": "Scientific computation",
+      "label": "Research computing",
       "definition": "More task-qualified computational work for research.",
-      "question": "Does extra compute produce reproducible useful research?"
+      "question": "Does more computing lead to useful, reproducible research?"
     },
     {
       "id": "demand",
-      "label": "Aggregate demand",
+      "label": "Total demand",
       "definition": "The total amount of service consumed, not just intensity.",
-      "question": "How much growth is caused by lower cost versus other drivers?"
+      "question": "How much extra use is caused by lower costs, and how much by other factors?"
     },
     {
       "id": "burdens",
-      "label": "Lifecycle burdens",
+      "label": "Costs and harms",
       "definition": "Materials, water, land, emissions, waste heat and safety.",
-      "question": "Which burdens rise, where, when and for whom?"
+      "question": "Which costs or harms increase, where, and for whom?"
     }
   ],
   "edges": [

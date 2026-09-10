@@ -39,4 +39,10 @@ class GuardTests(unittest.TestCase):
  def test_index_cannot_drift(self):
   records={k:[read(str(p.relative_to(ROOT))) for p in ROOT.glob(f'research/{k}/EDC-*.json')] for k in ['hypotheses','experiments','results','models']};index=read('research/index.json');index['hypotheses'][0]['status']='falsified'
   with self.assertRaisesRegex(ValueError,'Index status'):v.validate_index(index,records)
+class ReadabilityTests(unittest.TestCase):
+ def test_layout_break_cannot_join_heading_words(self):
+  parser=v.Page()
+  with self.assertRaisesRegex(ValueError,'join words'):parser.feed('<h1>Let reality<br>make us less wrong.</h1>')
+ def test_natural_heading_retains_the_space(self):
+  parser=v.Page();parser.feed('<h1>Let reality make us less wrong.</h1>');self.assertEqual(parser.headings,[1])
 if __name__=='__main__':unittest.main()

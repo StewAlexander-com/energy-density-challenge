@@ -12,6 +12,8 @@ For a specified useful service, what constraint matters most, and which interven
 
 Energy density is one candidate. It must be compared with efficiency, service redesign, infrastructure, operations and the best feasible existing option. A result can retain, narrow, replace or leave the framing unresolved.
 
+[Twenty-step UX review](docs/ux-review.md) documents the readability and interface revision.
+
 ## What exists
 
 - One proposed, uncalibrated [systems model](research/models/EDC-M-0001.json), created because the original model was not supplied. Every edge is an untested conditional hypothesis.
@@ -47,6 +49,6 @@ python3 scripts/build.py --check
 node --check assets/site.js
 ```
 
-Edit `templates/`, the Markdown documents and the JSON research records; regenerate the three HTML pages. CI rejects stale generated pages, invalid records and broken local references before publishing.
+Edit `templates/`, the Markdown documents and the JSON research records; regenerate the HTML pages. CI rejects stale generated pages, invalid records and broken local references before publishing.
 
 See [deployment instructions](docs/deployment.md). Original project content is MIT licensed; third-party sources and contributed data retain their own licenses. Attribution and provenance are required regardless of license.

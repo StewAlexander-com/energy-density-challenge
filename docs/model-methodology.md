@@ -6,7 +6,7 @@ The original systems model was not supplied. This new qualitative model was crea
 
 Eight nodes distinguish installed-system density, useful service per joule, delivery infrastructure, cost/access, useful services, scientific computation, aggregate demand and lifecycle burdens. Thirteen directed edges record a conditional proposed effect, an assumption and a discriminating test. Strengths are null. The arrows describe the question being asked, not an established causal influence; signs can change with context.
 
-`research/models/EDC-M-0001.json` is canonical. The public explorer presents exactly those edge records. Equal line weights deliberately carry no magnitude. Context citations explain a mechanism or term; the separate effect-evidence arrays are empty. No sector ranking or centrality calculation is performed.
+`research/models/EDC-M-0001.json` is canonical. The public explorer presents exactly those edge records. Equal line weights deliberately carry no magnitude. The explorer highlights only the selected factor’s connections. On narrow screens, a simple button grid replaces the diagram; the same connection details remain available. Context citations explain a mechanism or term; the separate effect-evidence arrays are empty. No sector ranking or centrality calculation is performed.
 
 ## How to make it testable
 

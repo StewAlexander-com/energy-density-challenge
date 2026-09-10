@@ -10,7 +10,7 @@ You do not need a breakthrough. A well-sourced objection, a missing constraint, 
 - **Capabilities:** describe available compute, inference credits, simulation resources, lab access, manufacturing expertise, funding or equipment, including conditions and limits. Do not send credentials or initiate transfers. There is no donation processor or job runner.
 - **A better framing:** name a useful service, the possible binding constraint, a baseline, a feasible alternative, and the observation that would change your mind.
 
-Use the website draft builder to download a local draft or open a prefilled GitHub issue for your review. The website does not submit it. A GitHub account is required to post an issue or pull request; someone without one can send their downloaded draft through a collaborator they choose. No email address or intake channel is invented here.
+Use the [website draft builder](https://stewalexander-com.github.io/energy-density-challenge/contribute.html) to download a local text or JSON draft or open a prefilled GitHub issue for your review. The website does not submit it. A GitHub account is required to post an issue or pull request; someone without one can send their downloaded draft through a collaborator they choose. No email address or intake channel is invented here.
 
 ## Keep the first contribution small
 

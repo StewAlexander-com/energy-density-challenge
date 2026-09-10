@@ -28,7 +28,7 @@ Keep the Pareto set: an option is dominated only if a feasible comparator is no 
 
 Record hypothesis, mechanism, assumptions, measurable prediction, cheapest discriminating test, equipment, uncertainty, safety, falsifier and replication procedure. Preregister before analysis or data collection, disclose deviations and preserve the original. Prefer information that can reverse a decision over an expensive demonstration that cannot distinguish alternatives.
 
-Allowed hypothesis states are UNRESOLVED, PLAUSIBLE — EXPERIMENT REQUIRED, FALSIFIED, and SUPPORTED WITHIN TESTED CONDITIONS. Falsified is scoped to the registered claim; missing data is unresolved. Support requires documented independent replication within named tested conditions, including qualifying result records. Simulations and desk analyses cannot be relabelled as physical replication. Report reasons, dates and limitations in confidence history. The launch probability is null because it is not calibrated.
+Allowed hypothesis states are UNRESOLVED, PLAUSIBLE — EXPERIMENT REQUIRED, FALSIFIED, and SUPPORTED WITHIN TESTED CONDITIONS. Falsified is scoped to the registered claim; missing data is unresolved. Support requires documented independent replication within named tested conditions, including qualifying result records. Simulations and desk analyses cannot be relabeled as physical replication. Report reasons, dates and limitations in confidence history. The launch probability is null because it is not calibrated.
 
 ## Rebound and total demand
 

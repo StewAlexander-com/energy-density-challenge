@@ -16,7 +16,7 @@ Date: 2026-09-10 (UTC). Scope: conceptual and implementation review, not an expe
 
 **Input from 01:** A service is the target; energy density is a possible means.
 
-**Finding:** Stored energy per kilogram, energy per litre, power, useful work per joule, computation per joule, and lifecycle cost are not interchangeable. Fuel-only, cell, pack, and installed-system figures have different boundaries. Quality, duration, duty cycle, and reliability can change the comparison.
+**Finding:** Stored energy per kilogram, energy per liter, power, useful work per joule, computation per joule, and lifecycle cost are not interchangeable. Fuel-only, cell, pack, and installed-system figures have different boundaries. Quality, duration, duty cycle, and reliability can change the comparison.
 
 **Revision:** Record units and the complete system boundary for each metric. Select the binding constraint per use case. For computation, fix task quality and latency; for heat, specify temperature; for mobility, specify payload, distance, and duty cycle. Never rank a battery cell directly against an entire generating plant.
 

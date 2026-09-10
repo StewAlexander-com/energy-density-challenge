@@ -32,16 +32,18 @@ function formatDraft(draft) {
 if (typeof module !== 'undefined' && module.exports) module.exports = {calculateEnergy,makeDraft,formatDraft};
 if (typeof document !== 'undefined') {
   const scenarios = {
-    transport:{title:'Move the same load, over the same route.',density:'Installed storage mass or volume limits payload or range.',alternative:'Route and vehicle efficiency, charging access, and the best feasible existing vehicle.',boundary:'Payload, route, duty cycle, service reliability, lifetime and the complete vehicle energy system.'},
-    heat:{title:'Keep the same space at a specified temperature.',density:'The space available for required thermal storage is the limiting factor.',alternative:'Insulation, heat pumps, controls, maintenance and the best feasible existing heating system.',boundary:'Indoor temperature, climate, occupancy, reliability, equipment lifetime and energy supply.'},
-    compute:{title:'Complete the same task, at the same quality.',density:'On-device storage mass or volume limits useful operation; this must be established.',alternative:'Better algorithms, efficient hardware, cooling, scheduling and reliable power delivery.',boundary:'Task quality, latency, workload, hardware lifetime, cooling and the complete energy supply.'}
+    transport:{title:'Move the same load over the same route.',density:'The weight or size of the complete storage system limits the load or range.',alternative:'A more efficient vehicle, a better route or better charging access.',boundary:'The load, route, reliability and lifetime. Include the full vehicle and energy system.'},
+    heat:{title:'Keep the same space at the same temperature.',density:'There is too little space for the heat storage that is needed.',alternative:'Better insulation, a heat pump or better heating controls.',boundary:'Indoor temperature, weather, occupancy and reliability. Include the equipment’s lifetime and energy supply.'},
+    compute:{title:'Complete the same task to the same standard.',density:'Battery weight or size limits the device’s operation. This would need to be established.',alternative:'More efficient software or hardware, better cooling or reliable power.',boundary:'Accuracy, speed, workload and hardware lifetime. Include cooling and the energy supply.'}
   };
   document.querySelectorAll('[data-scenario]').forEach(button => button.addEventListener('click', () => {
     const scenario = scenarios[button.dataset.scenario];
     document.querySelectorAll('[data-scenario]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
     for (const name of ['title','density','alternative','boundary']) document.getElementById('scenario-'+name).textContent = scenario[name];
   }));
-  const model = JSON.parse(document.getElementById('model-data').textContent);
+  const modelData = document.getElementById('model-data');
+  if (modelData) {
+  const model = JSON.parse(modelData.textContent);
   const labels = Object.fromEntries(model.nodes.map(n => [n.id,n.label]));
   function textElement(tag,text,className) {const element=document.createElement(tag);element.textContent=text;if(className)element.className=className;return element;}
   document.querySelectorAll('[data-node]').forEach(button => button.addEventListener('click', () => {
@@ -52,15 +54,19 @@ if (typeof document !== 'undefined') {
     document.getElementById('node-question').textContent = selected.question;
     const edgeList=document.getElementById('node-edges');edgeList.replaceChildren();
     for(const edge of model.edges.filter(item => item.source===selected.id || item.target===selected.id)) {
-      const article=textElement('article','','model-edge');
-      article.append(textElement('p',edge.id+' · UNTESTED HYPOTHESIS','edge-meta'),textElement('h4',labels[edge.source]+' → '+labels[edge.target]));
-      for(const [title,value] of [['Condition: ',edge.assumption],['Test: ',edge.discriminating_test]]) {
+      const article=textElement('details','','model-edge');
+      article.open = edgeList.childElementCount === 0;
+      article.append(textElement('summary',labels[edge.source]+' → '+labels[edge.target]));
+      for(const [title,value] of [['Assumption: ',edge.assumption],['How to test it: ',edge.discriminating_test]]) {
         const p=document.createElement('p');p.append(textElement('strong',title),document.createTextNode(value));article.append(p);
       }
+      article.append(textElement('p',edge.id+' · Untested connection','edge-meta'));
       edgeList.append(article);
     }
   }));
+  }
   const saving=document.getElementById('saving'), growth=document.getElementById('growth');
+  if (saving && growth) {
   function updateEnergy() {
     const s=Number(saving.value),g=Number(growth.value),result=calculateEnergy(s,g);
     document.getElementById('saving-value').textContent=s+'%';document.getElementById('growth-value').textContent=g+'%';
@@ -72,7 +78,9 @@ if (typeof document !== 'undefined') {
     document.getElementById('break-even').textContent=s===0?'With no per-task saving, any task growth increases operational energy.':'A '+formatter.format(result.breakEvenGrowth)+'% increase in tasks erases a '+s+'% saving per task.';
   }
   saving.addEventListener('input',updateEnergy);growth.addEventListener('input',updateEnergy);updateEnergy();
+  }
   const form=document.getElementById('draft-form'), evidence=document.getElementById('evidence-status'), source=document.getElementById('source'), preview=document.getElementById('draft-preview');
+  if (form) {
   let currentDraft=null;
   function invalidatePreview(){preview.hidden=true;currentDraft=null;}
   form.addEventListener('input',event=>{if(event.target.setCustomValidity)event.target.setCustomValidity('');invalidatePreview();});
@@ -89,16 +97,27 @@ if (typeof document !== 'undefined') {
     if(!form.reportValidity())return;
     const values=Object.fromEntries(new FormData(form));values.safety_acknowledged=form.elements.safety_acknowledged.checked;
     currentDraft=makeDraft(values);
-    const markdown=formatDraft(currentDraft);document.getElementById('draft-text').textContent=markdown;
+    const markdown=formatDraft(currentDraft);
+    const summary=document.getElementById('draft-text');summary.replaceChildren();
+    for (const [label,value] of [['What should improve',currentDraft.service],['For whom, where, and when',currentDraft.context],['Possible limit',currentDraft.constraint],['What happens today',currentDraft.baseline],['An alternative',currentDraft.alternative],['Evidence',currentDraft.evidence_status==='linked'?currentDraft.source:'Not yet available'],['What would change my mind',currentDraft.falsifier]]) {
+      const term=document.createElement('dt'),detail=document.createElement('dd');term.textContent=label;detail.textContent=value;summary.append(term,detail);
+    }
     const target=new URL(EDC_REPOSITORY+'/issues/new');target.searchParams.set('title','Framing question: '+currentDraft.service);target.searchParams.set('body',markdown);
     const link=document.getElementById('github-draft');
     if(target.href.length>7000){link.href=EDC_REPOSITORY+'/issues/new';link.textContent='Open GitHub; attach downloaded draft ↗';}
     else {link.href=target.href;link.textContent='Review on GitHub ↗';}
     preview.hidden=false;preview.focus();
   });
-  document.getElementById('download-draft').addEventListener('click',()=>{
-    if(!currentDraft)return;
-    const blob=new Blob([JSON.stringify(currentDraft,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),anchor=document.createElement('a');
-    anchor.href=url;anchor.download='energy-challenge-framing-draft.json';document.body.append(anchor);anchor.click();anchor.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
-  });
+  function downloadDraft(format) {
+    if (!currentDraft) return;
+    const json=format==='json';
+    const content=json?JSON.stringify(currentDraft,null,2)+'\n':formatDraft(currentDraft)+'\n';
+    const blob=new Blob([content],{type:json?'application/json':'text/plain;charset=utf-8'});
+    const url=URL.createObjectURL(blob),anchor=document.createElement('a');
+    anchor.href=url;anchor.download='energy-challenge-framing-draft.'+(json?'json':'txt');
+    document.body.append(anchor);anchor.click();anchor.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  }
+  document.getElementById('download-draft').addEventListener('click',()=>downloadDraft('text'));
+  document.getElementById('download-json').addEventListener('click',()=>downloadDraft('json'));
+  }
 }
