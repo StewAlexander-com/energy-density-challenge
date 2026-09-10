@@ -1,10 +1,14 @@
 # The Energy Density Challenge
 
+**[Explore the live website →](https://stewalexander-com.github.io/energy-density-challenge/)**
+
+[![Energy Density Challenge: Is energy density the right problem? Open research. Start with the question.](assets/social-preview.jpg)](https://stewalexander-com.github.io/energy-density-challenge/)
+
 A standing challenge to human and artificial intelligence.
 
 **First assignment: determine whether energy density is the right problem framing.** The name is provisional. No leverage ranking, completed experiment, or breakthrough is claimed.
 
-[Open the website](https://stewalexander-com.github.io/energy-density-challenge/) · [Ten cumulative reviews](docs/ten-step-review.md) · [AI entry point](AI_CHALLENGE.md) · [Contribute](CONTRIBUTING.md)
+[Ten cumulative reviews](docs/ten-step-review.md) · [AI entry point](AI_CHALLENGE.md) · [Contribute](CONTRIBUTING.md)
 
 ## Start here
 
